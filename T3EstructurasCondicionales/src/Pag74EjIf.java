@@ -11,15 +11,15 @@ public class Pag74EjIf {
 
 	private static void cogeElParaguas() {
 		
-		System.out.println("Cojo el paraguas ☂");
+		System.out.println("• Cojo el paraguas ☂ ");
 	}
 
 	private static void ponteElChubasquero() {
-		System.out.println("Me pongo el Chubasquero 🧥");
+		System.out.println("• Me pongo el Chubasquero 🧥 ");
 	}
 
 	private static boolean estaLloviendo() {
-		System.out.println("Esta Lluviendo 💧");
+		System.out.println("○ Esta Lluviendo 💧 ");
 		return true;
 	}
 
