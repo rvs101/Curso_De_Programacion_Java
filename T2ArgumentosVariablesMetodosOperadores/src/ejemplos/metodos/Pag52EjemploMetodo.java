@@ -5,7 +5,7 @@ package ejemplos.metodos;
  * @author Robot
  *
  */
-public class EjemploMetodo {
+public class Pag52EjemploMetodo {
 
 	/**
 	 * 
