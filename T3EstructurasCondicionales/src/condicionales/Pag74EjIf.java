@@ -1,3 +1,4 @@
+package condicionales;
 
 public class Pag74EjIf {
 
