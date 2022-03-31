@@ -7,7 +7,7 @@ package ejercicios;
  * @author Robot
  *
  */
-public class Pag108EjImprimirArgumentosPosicion {
+public class Pag108Ej4_1ImprimirArgumentosPosicion {
 
 	public static void main(String[] args) {
 
