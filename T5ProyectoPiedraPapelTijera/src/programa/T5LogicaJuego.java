@@ -18,15 +18,14 @@ public class T5LogicaJuego {
 	public static boolean getEmpezarJugar() {
 		boolean valor = true;
 		T5ReglasMensajesJuego.setElegirJugar();
-		int respuesta = T5CapturaTeclado.getNumero();
-		while (respuesta != 0 && respuesta != 1) {
-			System.out.println("🚫 Por favor introduce un respuesta mediante 'S' o 'N' ");
+		String respuesta = T5CapturaTeclado.getNumero();
+		while ((!respuesta.equals("0")) && (!respuesta.equals("1"))) {
+			System.out.println("🚫 Por favor introduce un respuesta mediante '0' - Para Salir o '1' - Para Jugar ");
 			respuesta = T5CapturaTeclado.getNumero();
 		}
-
-		if (respuesta == 1) {
+		if (respuesta.equals("1")) {
 			valor = true;
-		} else if (respuesta == 0) {
+		} else if (respuesta.equals("0")) {
 			valor = false;
 		}
 		return valor;
@@ -40,7 +39,6 @@ public class T5LogicaJuego {
 		boolean empezamos = false;
 		T5ReglasMensajesJuego.getInstrucciones();
 		T5ReglasMensajesJuego.getReglas();
-		T5ReglasMensajesJuego.setMensajeElegirArmas();
 		empezamos = getEmpezarJugar();
 		if (empezamos == true) {
 

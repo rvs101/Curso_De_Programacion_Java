@@ -29,12 +29,12 @@ public class T5CapturaTeclado {
 	 * 
 	 * @return
 	 */
-	public static int getNumero() {
+	public static String getNumero() {
 		Scanner sc = null;
-		int numero = 0;
+		String numero = "";
 		try {
 			sc = new Scanner(System.in);
-			numero = sc.nextInt();
+			numero = sc.nextLine();
 		} catch (Exception e) {
 			System.out.println(" ⛔ Mensaje de error : " + e.getMessage());
 		}
