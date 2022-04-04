@@ -20,25 +20,30 @@ public class T5ReglasMensajesJuego {
 	 * 
 	 */
 	public static void getInstrucciones() {
-		System.out.println("  Bienvenido al Piedra , Papel o Tijera ○ ");
-		System.out.println("------------------------------------------------------");
-		System.out.println("• Instrucciones de Juego •");
-		System.out.println("♦ 0 - Para salir del juego");
-		System.out.println("♦ 1 - Para empezar a jugar");
-		System.out.println("♦ Cuando empiece el juego");
-		System.out.println("♦ El jugador puede elegir entre 3 tipos de armas");
-		System.out.println("→ \"Piedra\" mediante la palabra (P)");
-		System.out.println("→ \"Papel\" mediante la palabra (L)");
-		System.out.println("→ \"Tijera\" mediante la palabra (T)");
-		System.out.println("------------------------------------------------------");
-		System.out.println("♦ Después de elegir un arma , la maquina elegirá su propia arma para empezar el juego");
+		System.out.println("🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩");
+		System.out.println("          ✊🖐✌ Bienvenido al Juego ✊🖐✌            ");
+		System.out.println("         ‼‼ Piedra ‼‼ Papel ‼‼ Tijera ‼‼            ");
+		System.out.println("🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩");
+		System.out.println("        📙 Instrucciones de Juego 📙                 ");
+		System.out.println("♦	     0 - Para salir del juego                   ");
+		System.out.println("♦	     1 - Para empezar a jugar                   ");
+		System.out.println("🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩");
+		System.out.println("(☞ﾟヮﾟ)☞        Cuando empiece el juego                ");
+		System.out.println("♦ El jugador 😊 puede elegir entre 3 tipos de armas ⚔");
+		System.out.println("✊ \"Piedra\" ✊ mediante la palabra (P)               ");
+		System.out.println("🖐 \"Papel\" 🖐 mediante la palabra (L)                ");
+		System.out.println("✌ \"Tijera\" ✌ mediante la palabra (T)                ");
+		System.out.println("🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩");
+		System.out.println("♦ Después de elegir tu arma ⚔ , la maquina 🤖 elegirá su propia arma ⚔ para empezar el juego");
 		System.out.println("♦ Tu mostrarás tu arma la cual pueden ser :");
-		System.out.println("♦ \"Piedra → (P) \" + \"Papel → (L) \" + \"Tijera → (T) \"");
+		System.out.println("♦ \"Piedra → ✊ (P) \" + \"Papel → 🖐 (L) \" + \"Tijera → ✌ (T) \"");
 		System.out.println("♦ Y la maquina mostrará su propia arma que pueden ser también :");
-		System.out.println("♦ \"Piedra\" → (P) \" + \"Papel\" → (L) \" + \"Piedra\" → (T) \"");
-		System.out.println("♦ Una vez mostradas las armas después de la selección de las armas");
-		System.out.println("♦ Las reglas del juego decidirá quién es el ganador de ese round");
-		System.out.println("♦ El juego decidirá quién es el ganador después de 3 partidas jugadas");
+		System.out.println("♦ \"Piedra\" → ✊ (P) \" + \"Papel\" → 🖐 (L) \" + \"Piedra\" → ✌ (T) \"");
+		System.out.println("🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩");
+		System.out.println("♦ Una vez mostradas las armas después de la selección de armas ⚔");
+		System.out.println("♦ Las reglas 📕 del juego 🎲 decidirá quién es el ganador 👑 de ese round");
+		System.out.println("♦ El juego 🎲 decidirá quién es el ganador 🤴 después de 10 partidas jugadas");
+		System.out.println("🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩");
 	}
 
 	/**
@@ -46,12 +51,13 @@ public class T5ReglasMensajesJuego {
 	 */
 	public static void getReglas() {
 		System.out.println("○ Reglas de Juego ○ ");
-		System.out.println("------------------------------------------------------");
-		System.out.println("→ La \"Piedra\" vence a la \"Tijera\" ");
-		System.out.println("→ El \"Papel\" vence a la \"Piedra\"");
-		System.out.println("→ La \"Tijera\" vence al \"Papel\"");
-		System.out.println("→ Si ambas armas son iguales se considera \"EMPATE\" ");
-		System.out.println("→ Se repite el juego y no cuenta en el marcador del programa");
+		System.out.println("➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖");
+		System.out.println("→ La \"Piedra\" ✊ vence a la \"Tijera\" 🖐 ");
+		System.out.println("→ El \"Papel\" 🖐 vence a la \"Piedra\" ✊ ");
+		System.out.println("→ La \"Tijera\" 🖐 vence al \"Papel\" 🖐 ");
+		System.out.println("→ Si ambas armas ⚔ son iguales se considera 😲 \"EMPATE\" 😲 ");
+		System.out.println("→ Se repite el juego 🎲 y no cuenta en el marcador 🎰 del juego 🎲 ");
+		System.out.println("➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖");
 	}
 
 	/**
@@ -72,7 +78,7 @@ public class T5ReglasMensajesJuego {
 		System.out.println("¿ 🎰 Desea seguir jugando 🎰 ?");
 		System.out.println(" • Pulsa 'S' para continuar ");
 		System.out.println(" • Pulsa 'N' para finalizar ");
-		System.out.println(" ⏳ Esperando Respuesta ");
+		System.out.println(" ⏳ Esperando Respuesta ⏳ ");
 		return T5CapturaTeclado.getRespuesta();
 	}
 
@@ -195,7 +201,7 @@ public class T5ReglasMensajesJuego {
 	 */
 	public static int getFinDelJuego(int partidas) {
 		System.out.println("____________________________________________________________________");
-		System.out.println("\t      🎲 PARTIDAS JUGADAS : " + partidas + " 🎲 ");
+		System.out.println("\t       🎲 PARTIDAS JUGADAS : " + partidas + " 🎲 ");
 		System.out.println("\t \t  🎲 FIN DEL JUEGO 🎲 ");
 		System.out.println("____________________________________________________________________");
 		return partidas;
@@ -205,11 +211,11 @@ public class T5ReglasMensajesJuego {
 	 * 
 	 */
 	public static void setElegirJugar() {
-		System.out.println("🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨");
+		System.out.println("🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧");
 		System.out.println("    ♦♦♦♦ Elige una opción ♦♦♦♦");
 		System.out.println("♦ 0 - Para salir del juego - 0 ♦ ");
 		System.out.println("♦ 1 - Para empezar a jugar - 1 ♦ ");
-		System.out.println("🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨");
+		System.out.println("🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧");
 
 	}
 
@@ -217,9 +223,9 @@ public class T5ReglasMensajesJuego {
 	 * 
 	 */
 	public static void setGanadorFinal(String ganador) {
-		System.out.println("✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨");
+		System.out.println("🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨");
 		System.out.println("  El Ganador es 👑 " + ganador + " 👑 ");
-		System.out.println("🎆🎆🎆🎆🎆🎆🎆🎆🎆🎆🎆🎆🎆🎆🎆🎆🎆🎆🎆🎆🎆");
+		System.out.println("🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨");
 	}
 
 }
