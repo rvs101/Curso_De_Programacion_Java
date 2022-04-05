@@ -124,8 +124,6 @@ public class T5JugadorMaquina {
 			setMaquinaArma("L");
 			break;
 		}
-		System.out.println("🤖 El " + getMaquinaNombre() + " ha elegido " + getMaquinaArma() + " → "
-				+ T5ReglasMensajesJuego.getArmaMaquina() + " para jugar");
 		System.out.println("🤖 Arma elegida ⚔ : " + getMaquinaArma() + " → " + T5ReglasMensajesJuego.getArmaMaquina());
 	}
 }

@@ -106,9 +106,9 @@ public class T5JugadorPersona {
 	 * Establece nombre al jugador
 	 */
 	public static void setJugadorElegirNombre() {
-		System.out.println("🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷");
-		System.out.println(" 🔷 🧑 👱‍♀️  Elige el nombre del jugador 🧑 👱‍♀️  🔷 ");
-		System.out.println("🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷");
+		System.out.println("🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷");
+		System.out.println("🔷     🧑 👱‍♀️  Elige el nombre del jugador 🧑 👱‍♀️       🔷 ");
+		System.out.println("🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷");
 		Scanner sc = null;
 		try {
 			sc = new Scanner(System.in);
@@ -119,7 +119,7 @@ public class T5JugadorPersona {
 	}
 
 	/**
-	 * Establece arma a la maquina
+	 * Establece arma al jugador
 	 */
 	public static void setJugadorElegirArma() {
 		T5ReglasMensajesJuego.setMensajeElegirArmas();
@@ -131,21 +131,13 @@ public class T5JugadorPersona {
 		}
 		do {
 			jugadorArma = sc.nextLine();
-			System.out.println(
-					"🧑👱‍♀️ Arma elegida ⚔ : \" + jugadorArma + \"  →  \" + T5ReglasMensajesJuego.getArmaJugador());\r\n"
-							+ "	} El jugador/a " + getJugadorNombre() + " ha elegido " + getJugadorArma() + " → "
-							+ T5ReglasMensajesJuego.getArmaJugador() + " para jugar");
 			if (!jugadorArma.equals("P") && !jugadorArma.equals("L") && !jugadorArma.equals("T")) {
-				System.out.println(
-						"🧑👱‍♀️ Arma elegida ⚔ : \" + jugadorArma + \"  →  \" + T5ReglasMensajesJuego.getArmaJugador());\r\n"
-								+ "	} Por favor elige una de las 3 opciones disponibles");
 				System.out.println("✊ Piedra → P ");
 				System.out.println("✌ Tijera → L ");
 				System.out.println("🖐 Papel → T ");
 			}
 		} while (!jugadorArma.equals("P") && !jugadorArma.equals("L") && !jugadorArma.equals("T"));
-		System.out
-				.println("🧑👱‍♀️ Arma elegida ⚔ : " + jugadorArma + "  →  " + T5ReglasMensajesJuego.getArmaJugador());
+		System.out.println("🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧");
+		System.out.println("🧑👱‍♀️ Arma elegida ⚔ : " + jugadorArma + " → " + T5ReglasMensajesJuego.getArmaJugador());
 	}
-
 }
