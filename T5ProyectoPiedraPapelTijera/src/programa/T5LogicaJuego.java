@@ -37,15 +37,18 @@ public class T5LogicaJuego {
 	public static void setPartidasJugadas() {
 		int partidas = 0;
 		boolean empezamos = false;
+
 		T5ReglasMensajesJuego.getInstrucciones();
 		T5ReglasMensajesJuego.getReglas();
 		empezamos = getEmpezarJugar();
+
 		if (empezamos == true) {
 
 			T5JugadorPersona.setJugadorElegirNombre();
 			T5JugadorMaquina.getMaquinaNombre();
 
 			boolean interruptor = true;
+
 			while ((T5ContadoresPuntuacion.getJugadorUnaVictoria() < 5)
 					&& (T5ContadoresPuntuacion.getMaquinaUnaVictoria() < 5) && (T5ContadoresPuntuacion.getEmpates() < 9)
 					&& (interruptor == true)) {
@@ -58,6 +61,7 @@ public class T5LogicaJuego {
 			}
 		}
 		T5ReglasMensajesJuego.setGanadorFinal(getObtenerGanador());
+		T5ReglasMensajesJuego.setEmpate();
 		T5ReglasMensajesJuego.getFinDelJuego(partidas);
 	}
 
@@ -86,8 +90,9 @@ public class T5LogicaJuego {
 	 * 
 	 */
 	public static void getCompararArmas() {
+		T5ContadoresPuntuacion.setUnaPartida();
+		T5ReglasMensajesJuego.setRound();
 		if (T5JugadorPersona.getJugadorArma().equals(T5JugadorMaquina.getMaquinaArma())) {
-			System.out.println("Empate");
 			T5ContadoresPuntuacion.setEmpates();
 			// • Piedras
 //			Jugador Piedra - Maquina Tijera 
@@ -95,82 +100,66 @@ public class T5LogicaJuego {
 			T5ReglasMensajesJuego.setJugadorGanador(T5JugadorPersona.getJugadorArma());
 			T5ContadoresPuntuacion.setJugadorUnaVictoria();
 			T5ContadoresPuntuacion.setMaquinaUnaPerdidas();
-			T5ContadoresPuntuacion.setUnaPartida();
 //			Maquina Piedra - Jugador Tijera
 		} else if (T5JugadorMaquina.getMaquinaArma().equals("P") && T5JugadorPersona.getJugadorArma().equals("T")) {
 			T5ReglasMensajesJuego.setMaquinaGanador(T5JugadorMaquina.getMaquinaArma());
 			T5ContadoresPuntuacion.setMaquinaUnaVictoria();
 			T5ContadoresPuntuacion.setJugadorUnaPerdida();
-			T5ContadoresPuntuacion.setUnaPartida();
 //❌			Jugador Piedra - Maquina Papel
 		} else if (T5JugadorPersona.getJugadorArma().equals("P") && T5JugadorMaquina.getMaquinaArma().equals("L")) {
 			T5ReglasMensajesJuego.setMaquinaGanador(T5JugadorMaquina.getMaquinaArma());
 			T5ContadoresPuntuacion.setMaquinaUnaVictoria();
 			T5ContadoresPuntuacion.setJugadorUnaPerdida();
-			T5ContadoresPuntuacion.setUnaPartida();
 //			Jugador Papel - Maquina Piedra
 		} else if (T5JugadorPersona.getJugadorArma().equals("L") && T5JugadorMaquina.getMaquinaArma().equals("P")) {
 			T5ReglasMensajesJuego.setJugadorGanador(T5JugadorPersona.getJugadorArma());
 			T5ContadoresPuntuacion.setJugadorUnaVictoria();
 			T5ContadoresPuntuacion.setMaquinaUnaPerdidas();
-			T5ContadoresPuntuacion.setUnaPartida();
 //			Maquina Piedra - Jugador Papel
 		} else if (T5JugadorMaquina.getMaquinaArma().equals("P") && T5JugadorPersona.getJugadorArma().equals("L")) {
 			T5ReglasMensajesJuego.setJugadorGanador(T5JugadorPersona.getJugadorArma());
 			T5ContadoresPuntuacion.setJugadorUnaVictoria();
 			T5ContadoresPuntuacion.setMaquinaUnaPerdidas();
-			T5ContadoresPuntuacion.setUnaPartida();
 			// • Tijeras
 		} else if (T5JugadorPersona.getJugadorArma().equals("T") && T5JugadorMaquina.getMaquinaArma().equals("L")) {
 			T5ReglasMensajesJuego.setJugadorGanador(T5JugadorPersona.getJugadorArma());
 			T5ContadoresPuntuacion.setJugadorUnaVictoria();
 			T5ContadoresPuntuacion.setMaquinaUnaPerdidas();
-			T5ContadoresPuntuacion.setUnaPartida();
 //			Maquina Tijera - Jugador Papel
 		} else if (T5JugadorMaquina.getMaquinaArma().equals("T") && T5JugadorPersona.getJugadorArma().equals("L")) {
 			T5ReglasMensajesJuego.setMaquinaGanador(T5JugadorMaquina.getMaquinaArma());
 			T5ContadoresPuntuacion.setMaquinaUnaVictoria();
 			T5ContadoresPuntuacion.setJugadorUnaPerdida();
-			T5ContadoresPuntuacion.setUnaPartida();
 //			Jugador Tijera - Maquina Papel
 		} else if (T5JugadorPersona.getJugadorArma().equals("T") && T5JugadorMaquina.getMaquinaArma().equals("P")) {
 			T5ReglasMensajesJuego.setMaquinaGanador(T5JugadorMaquina.getMaquinaArma());
 			T5ContadoresPuntuacion.setMaquinaUnaVictoria();
 			T5ContadoresPuntuacion.setJugadorUnaPerdida();
-			T5ContadoresPuntuacion.setUnaPartida();
 //			Maquina Tijera - Jugador Piedra
 		} else if (T5JugadorMaquina.getMaquinaArma().equals("T") && T5JugadorPersona.getJugadorArma().equals("P")) {
 			T5ReglasMensajesJuego.setJugadorGanador(T5JugadorPersona.getJugadorArma());
 			T5ContadoresPuntuacion.setJugadorUnaVictoria();
 			T5ContadoresPuntuacion.setMaquinaUnaPerdidas();
-			T5ContadoresPuntuacion.setUnaPartida();
 			// • Papeles
 //			Maquina Papel - Persona Piedra
 		} else if (T5JugadorMaquina.getMaquinaArma().equals("L") && T5JugadorPersona.getJugadorArma().equals("P")) {
 			T5ReglasMensajesJuego.setMaquinaGanador(T5JugadorMaquina.getMaquinaArma());
 			T5ContadoresPuntuacion.setMaquinaUnaVictoria();
 			T5ContadoresPuntuacion.setJugadorUnaPerdida();
-			T5ContadoresPuntuacion.setUnaPartida();
 //			Maquina Papel - Persona Tijera
 		} else if (T5JugadorMaquina.getMaquinaArma().equals("L") && T5JugadorPersona.getJugadorArma().equals("T")) {
 			T5ReglasMensajesJuego.setJugadorGanador(T5JugadorPersona.getJugadorArma());
 			T5ContadoresPuntuacion.setJugadorUnaVictoria();
 			T5ContadoresPuntuacion.setMaquinaUnaPerdidas();
-			T5ContadoresPuntuacion.setUnaPartida();
 //			Persona Papel - Maquina Tijera
 		} else if (T5JugadorPersona.getJugadorArma().equals("L") && T5JugadorMaquina.getMaquinaArma().equals("T")) {
 			T5ReglasMensajesJuego.setMaquinaGanador(T5JugadorMaquina.getMaquinaArma());
 			T5ContadoresPuntuacion.setMaquinaUnaVictoria();
 			T5ContadoresPuntuacion.setJugadorUnaPerdida();
-			T5ContadoresPuntuacion.setUnaPartida();
 		}
 		T5ReglasMensajesJuego.setMarcadorGeneral();
 	}
 
-	/**
-	 * 
-	 * @return
-	 */
 	public static String getObtenerGanador() {
 		String ganador = "Sin Ganador";
 
@@ -179,7 +168,33 @@ public class T5LogicaJuego {
 		} else if (T5ContadoresPuntuacion.getMaquinaUnaVictoria() > T5ContadoresPuntuacion.getJugadorUnaVictoria()) {
 			ganador = T5JugadorMaquina.getMaquinaNombre();
 		}
+		T5ReglasMensajesJuego.setGanador();
+		T5ReglasMensajesJuego.setPerdedor();
 		return ganador;
+	}
+
+	/**
+	 * 
+	 * @return
+	 */
+	public static String getGanadorFinal() {
+		String ganadorFinal = "";
+		if ((T5ContadoresPuntuacion.getJugadorUnaVictoria() > T5ContadoresPuntuacion.getJugadorUnaVictoria())) {
+			ganadorFinal = T5JugadorPersona.getJugadorNombre();
+		} else if ((T5ContadoresPuntuacion.getJugadorUnaVictoria() < T5ContadoresPuntuacion.getJugadorUnaVictoria())) {
+			ganadorFinal = T5JugadorMaquina.getMaquinaNombre();
+		}
+		return ganadorFinal;
+	}
+
+	/**
+	 * 
+	 * @return
+	 */
+	public static String getPerdedorFinal() {
+		return T5ContadoresPuntuacion.getJugadorUnaPerdida() > T5ContadoresPuntuacion.getMaquinaUnaPerdida()
+				? T5JugadorPersona.getJugadorNombre()
+				: T5JugadorMaquina.getMaquinaNombre();
 	}
 
 }

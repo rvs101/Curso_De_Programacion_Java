@@ -1,5 +1,7 @@
 package programa;
 
+import ayudas.T5ReglasMensajesJuego;
+
 /**
  * Jugador Maquina
  * 
@@ -122,7 +124,6 @@ public class T5JugadorMaquina {
 			setMaquinaArma("L");
 			break;
 		}
-		System.out.println("○ El " + getMaquinaNombre() + " ha elegido " + getMaquinaArma() + " para jugar");
-		System.out.println("○ Arma elegida : " + getMaquinaArma());
+		System.out.println("🤖 Arma elegida ⚔ : " + getMaquinaArma() + " → " + T5ReglasMensajesJuego.getArmaMaquina());
 	}
 }
