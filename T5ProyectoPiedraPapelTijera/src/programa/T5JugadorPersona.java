@@ -106,12 +106,14 @@ public class T5JugadorPersona {
 	 * Establece nombre al jugador
 	 */
 	public static void setJugadorElegirNombre() {
-		System.out.println("• Elige el nombre de jugador : ");
+		System.out.println("🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷");
+		System.out.println(" 🔷 🧑 👱‍♀️  Elige el nombre del jugador 🧑 👱‍♀️  🔷 ");
+		System.out.println("🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷");
 		Scanner sc = null;
 		try {
 			sc = new Scanner(System.in);
 		} catch (Exception e) {
-			System.out.println("⚠ Atención Excepción en el Scanner : " + e.getMessage());
+			System.out.println("⚠ Atención Excepción en el Scanner : " + e.getMessage() + " ⚠ ");
 		}
 		jugadorNombre = sc.nextLine();
 	}
@@ -125,20 +127,25 @@ public class T5JugadorPersona {
 		try {
 			sc = new Scanner(System.in);
 		} catch (Exception e) {
-			System.out.println("⚠ Atención Excepción en el Scanner : " + e.getMessage());
+			System.out.println("⚠ Atención Excepción en el Scanner : " + e.getMessage() + " ⚠ ");
 		}
 		do {
 			jugadorArma = sc.nextLine();
-			System.out
-					.println("• El jugador " + getJugadorNombre() + " ha elegido " + getJugadorArma() + " para jugar");
+			System.out.println(
+					"🧑👱‍♀️ Arma elegida ⚔ : \" + jugadorArma + \"  →  \" + T5ReglasMensajesJuego.getArmaJugador());\r\n"
+							+ "	} El jugador/a " + getJugadorNombre() + " ha elegido " + getJugadorArma() + " → "
+							+ T5ReglasMensajesJuego.getArmaJugador() + " para jugar");
 			if (!jugadorArma.equals("P") && !jugadorArma.equals("L") && !jugadorArma.equals("T")) {
-				System.out.println("• Por favor elige una de las 3 opciones disponibles");
-				System.out.println("• Piedra → P ");
-				System.out.println("• Tijera → L ");
-				System.out.println("• Papel → T ");
+				System.out.println(
+						"🧑👱‍♀️ Arma elegida ⚔ : \" + jugadorArma + \"  →  \" + T5ReglasMensajesJuego.getArmaJugador());\r\n"
+								+ "	} Por favor elige una de las 3 opciones disponibles");
+				System.out.println("✊ Piedra → P ");
+				System.out.println("✌ Tijera → L ");
+				System.out.println("🖐 Papel → T ");
 			}
 		} while (!jugadorArma.equals("P") && !jugadorArma.equals("L") && !jugadorArma.equals("T"));
-		System.out.println("• Arma elegida : " + jugadorArma);
+		System.out
+				.println("🧑👱‍♀️ Arma elegida ⚔ : " + jugadorArma + "  →  " + T5ReglasMensajesJuego.getArmaJugador());
 	}
 
 }
