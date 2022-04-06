@@ -8,7 +8,7 @@ import java.util.Scanner;
  * @author Robot
  *
  */
-public class Pag109Ej4_6EjConseguirRespuestaUsuario {
+public class Pag117Ej4_6EjConseguirRespuestaUsuario {
 
 	public static void main(String[] args) {
 

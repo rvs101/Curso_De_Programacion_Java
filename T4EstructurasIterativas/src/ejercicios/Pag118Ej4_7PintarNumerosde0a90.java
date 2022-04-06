@@ -1,6 +1,6 @@
 package ejercicios;
 
-public class Pag109Ej4_7PintarNumerosde0a90 {
+public class Pag118Ej4_7PintarNumerosde0a90 {
 
 	public static void main(String[] args) {
 

@@ -1,5 +1,10 @@
 package ejercicios;
 
+/**
+ * 
+ * @author Robot
+ *
+ */
 public class Pag108Ej4_4TraduccionForWhile {
 
 	public static void main(String[] args) {
@@ -11,6 +16,7 @@ public class Pag108Ej4_4TraduccionForWhile {
 	}
 
 	/**
+	 * Factorial con for
 	 * 
 	 * @param args
 	 */
@@ -27,6 +33,7 @@ public class Pag108Ej4_4TraduccionForWhile {
 	}
 
 	/**
+	 * Factorial con while
 	 * 
 	 * @param args
 	 */
