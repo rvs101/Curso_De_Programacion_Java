@@ -1,7 +1,5 @@
 package programa;
 
-import ayudas.T5ReglasMensajesJuego;
-
 /**
  * Jugador Maquina
  * 

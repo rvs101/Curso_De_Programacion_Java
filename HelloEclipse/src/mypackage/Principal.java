@@ -10,8 +10,10 @@ public class Principal extends Frame {
 	 */
 	private static final long serialVersionUID = 1L;
 
-	Principal() {
-
+	/**
+	 * Constructor que inicializa los valores de la clase
+	 */
+	public Principal() {
 		// creating a button
 		Button b = new Button("Click Me!!");
 		// setting button position on screen
