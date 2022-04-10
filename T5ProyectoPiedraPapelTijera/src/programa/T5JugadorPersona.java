@@ -2,8 +2,6 @@ package programa;
 
 import java.util.Scanner;
 
-import ayudas.T5ReglasMensajesJuego;
-
 /**
  * Jugador Persona
  * 
@@ -107,7 +105,7 @@ public class T5JugadorPersona {
 	 */
 	public static void setJugadorElegirNombre() {
 		System.out.println("🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷");
-		System.out.println("🔷     🧑 👱‍♀️  Elige el nombre del jugador 🧑 👱‍♀️       🔷 ");
+		System.out.println(" 🔷           🧑 👱‍♀️ Elige el nombre del jugador 🧑 👱‍♀️           🔷 ");
 		System.out.println("🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷🔷");
 		Scanner sc = null;
 		try {
@@ -116,6 +114,7 @@ public class T5JugadorPersona {
 			System.out.println("⚠ Atención Excepción en el Scanner : " + e.getMessage() + " ⚠ ");
 		}
 		jugadorNombre = sc.nextLine();
+		sc.close();
 	}
 
 	/**

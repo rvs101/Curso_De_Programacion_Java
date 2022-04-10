@@ -22,6 +22,7 @@ public class T5CapturaTeclado {
 		} catch (Exception e) {
 			System.out.println(" ⛔ Mensaje de error : " + e.getMessage());
 		}
+		sc.close();
 		return respuesta;
 	}
 
@@ -38,6 +39,7 @@ public class T5CapturaTeclado {
 		} catch (Exception e) {
 			System.out.println(" ⛔ Mensaje de error : " + e.getMessage());
 		}
+		sc.close();
 		return numero;
 	}
 

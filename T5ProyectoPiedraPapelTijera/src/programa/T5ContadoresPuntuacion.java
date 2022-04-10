@@ -103,9 +103,9 @@ public class T5ContadoresPuntuacion {
 	 * Establece +1 Empate
 	 */
 	public static void setEmpates() {
-		System.out.println("                       🤜🤛         ");
+		System.out.println("                       🤜🤛             ");
 		System.out.println("                   🤜 Empate 🤛         ");
-		System.out.println("                       🤜🤛         ");
+		System.out.println("                       🤜🤛             ");
 		empates++;
 	}
 
