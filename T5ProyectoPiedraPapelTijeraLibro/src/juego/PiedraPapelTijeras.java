@@ -11,13 +11,14 @@ import java.util.Scanner;
 public class PiedraPapelTijeras {
 
 //	Constantes de Clase
+//	Valores del juego
 	private static final String PIEDRA = "P";
 	private static final String PAPEL = "L";
 	private static final String TIJERAS = "T";
 	private static final String SALIR = "S";
 
 	private static final String[] JUEGO = { PIEDRA, PAPEL, TIJERAS };
-
+//	Marcador del juego
 	private static final int EMPATE = 0;
 	private static final int GANAS = 1;
 	private static final int PIERDES = 2;
@@ -36,7 +37,7 @@ public class PiedraPapelTijeras {
 
 	public static void main(String[] args) {
 
-//		abrimos un Scanner para leer la entrada del usuarios
+//		Abrimos un Scanner para leer la entrada del usuarios
 		Scanner s = new Scanner(System.in);
 
 //		Instrucciones
@@ -51,7 +52,7 @@ public class PiedraPapelTijeras {
 //		Jugada del Usuario
 			String seleccionUsuario = s.next();
 			if (seleccionUsuario.equalsIgnoreCase(SALIR)) {
-				break; // Si nos da una S , cortamos el bucle para terminar
+				break; // Si nos da una 'S' cortamos el bucle para terminar
 			}
 
 //		System.out.println("*** Usuario " + seleccionUsuario);
@@ -61,6 +62,7 @@ public class PiedraPapelTijeras {
 //		System.out.println("*** Interpretacion " + eleccionUsuario);
 			if (eleccionUsuario == ERROR_NO_ENCONTRADA) {
 				System.err.println(MSJ_ERROR_NO_ENCONTRADA);
+				System.out.println(PEDIR__NUEVA_JUGADA);
 				continue;
 			}
 
@@ -68,7 +70,7 @@ public class PiedraPapelTijeras {
 			int resultado = usuarioGana(eleccionPC, eleccionUsuario);
 //		System.out.println("*** Resultado: " + eleccionUsuario);
 
-//		cerramos lo que abrimos
+//		Cerramos lo que abrimos
 
 //		Mostrar el ganador de la jugada
 			switch (resultado) {
@@ -110,7 +112,7 @@ public class PiedraPapelTijeras {
 	 * @return
 	 */
 	private static int usuarioGana(int eleccionPC, int eleccionUsuario) {
-		int res = eleccionUsuario - eleccionPC;
+		int res = (eleccionUsuario - eleccionPC);
 		if (res < 0) {
 			res += JUEGO.length;
 		}

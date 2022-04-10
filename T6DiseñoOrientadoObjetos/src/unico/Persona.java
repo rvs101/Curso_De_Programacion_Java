@@ -9,6 +9,7 @@ public class Persona {
 	private String apellido;
 	private String fechaNac;
 	private char genero;
+	private Vehiculo vehiculo;
 
 	/**
 	 * 
