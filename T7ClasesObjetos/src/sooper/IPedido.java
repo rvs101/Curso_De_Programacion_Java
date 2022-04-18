@@ -20,26 +20,26 @@ public interface IPedido {
 	/**
 	 * Obtenemos los productos de la Interfaz Set<IProducto>
 	 * 
-	 * @return Devuelve una Interface Set de <IProducto>
+	 * @return Devuelve una <Interface Set> de <IProducto>
 	 */
 	Set<IProducto> getProductos();
 
 	/**
 	 * Obtenemos los productos de la Interfaz Set<IContenedor>
 	 * 
-	 * @return Devuelve una Interface Set de <IContenedor>
+	 * @return Devuelve una <Interface Set> de <IContenedor>
 	 */
 	Set<IContenedor> getContenedores();
 
 	/**
-	 * Añade/Establece a la Interface IPedido un objeto de tipo IContenedor
+	 * Establece a la <Interface IPedido> un objeto de tipo IContenedor
 	 * 
 	 * @param contenedor
 	 */
 	void addContenedor(IContenedor contenedor);
 
 	/**
-	 * Devuelve un objeto del tipo Interface IContenedor después de pasarle por
+	 * Devuelve un objeto del tipo <Interface IProducto> después de pasarle por
 	 * parametros un objeto de la Interface IProducto
 	 * 
 	 * @param producto

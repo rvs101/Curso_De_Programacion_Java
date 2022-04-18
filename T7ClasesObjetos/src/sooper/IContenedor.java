@@ -49,9 +49,9 @@ public interface IContenedor {
 	// Devuelve un objeto de 'tipo enum'
 	//
 	// • Antes era :
-	//	
-	//	 String    getTipo();
-	//     ↓
+	//
+	// String getTipo();
+	// ↓
 	TipoContenedor getTipo();
 
 	/**
@@ -71,9 +71,11 @@ public interface IContenedor {
 	boolean resiste(IProducto producto);
 
 	/**
-	 * Devuelve la resistencia
+	 * Desde la Interface
 	 * 
-	 * @return obtener el numero de la superficie
+	 * Devuelve la superficie de un contenedor
+	 * 
+	 * @return obtener la superficie
 	 */
 	int getSuperficie();
 

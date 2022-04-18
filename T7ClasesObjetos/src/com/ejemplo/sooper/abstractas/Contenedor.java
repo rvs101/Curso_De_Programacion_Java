@@ -1,9 +1,6 @@
-package sooper.ejemplo.abstractas;
+package com.ejemplo.sooper.abstractas;
 
 import java.util.Set;
-
-import sooper.ejemplo.abstractas.IContenedor;
-import sooper.ejemplo.abstractas.IProducto;
 
 /**
  * 

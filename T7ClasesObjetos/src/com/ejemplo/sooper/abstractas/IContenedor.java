@@ -1,4 +1,4 @@
-package sooper.ejemplo.abstractas;
+package com.ejemplo.sooper.abstractas;
 
 import java.util.Set;
 
