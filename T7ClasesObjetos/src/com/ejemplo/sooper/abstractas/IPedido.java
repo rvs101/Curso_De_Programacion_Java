@@ -1,7 +1,7 @@
 /**
  * Paquete principal de la app 
  */
-package sooper.ejemplo.abstractas;
+package com.ejemplo.sooper.abstractas;
 
 /**
  * Clase Set 

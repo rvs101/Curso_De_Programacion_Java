@@ -6,7 +6,7 @@ package sooper;
 import java.util.HashSet;
 
 /**
- * Interface
+ * Interface Set implementa la clase HashSet
  */
 import java.util.Set;
 
@@ -20,9 +20,9 @@ public class Pedido implements IPedido {
 
 //	Atributo de instancia
 	private String referencia;
-//	Atributo de instancia
-//	       Interface          referencia
-//           ↓	                  ↓
+//	Atributo de instancia - Permite llamar metodos de la Interface <IContenedor>
+//	            Interface     Referencia
+//                 ↓	          ↓
 	private Set<IContenedor> contenedores;
 
 	/**
@@ -36,7 +36,7 @@ public class Pedido implements IPedido {
 	public Pedido(String referencia) {
 //		Almacena en el objeto la referecia que le pasemos
 		this.referencia = referencia;
-//		                         Clase implementa el Set
+//		Cuando crea un objeto del Tipo Pedido creare una referencia a la clase HashSet para crear objeto
 		this.contenedores = new HashSet<>();
 	}
 
@@ -61,7 +61,7 @@ public class Pedido implements IPedido {
 	}
 
 	/**
-	 * @return Devuelve un contenedor del tipo Interface Contenedor 
+	 * @return Devuelve un contenedor del tipo Interface Contenedor
 	 */
 	@Override
 	public Set<IContenedor> getContenedores() {
@@ -72,15 +72,23 @@ public class Pedido implements IPedido {
 	/**
 	 * Añadir el contenedor recibido al conjunto de contenedores
 	 * 
-	 * @param Recibe una Interface Contenedor 
+	 * 1º <Interface Set> permite que la "Clase HashSet" pueda invocar el metodo
+	 * 'add'
+	 * 
+	 * 2º Utiliza un objeto de la "Clase HashSet" para invocar el metodo add
+	 * 
+	 * 3º Añade un objeto de la Interface IContenedor
+	 * 
+	 * @param Recibe como tipo de dato una Interface IContenedor
 	 */
 	@Override
 	public void addContenedor(IContenedor contenedor) {
+// "contenedores" utiliza el metodo 'add' heredado por la interface Set
 		contenedores.add(contenedor);
 	}
 
 	/**
-	 * Interface Contenedor establece un objeto Interface Producto 
+	 * Interface Contenedor establece un objeto Interface Producto
 	 * 
 	 * @return No devuelve nada
 	 */
