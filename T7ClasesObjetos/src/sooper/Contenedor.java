@@ -2,6 +2,8 @@ package sooper;
 
 import java.util.Set;
 
+import sooper.enums.TipoContenedor;
+
 /**
  * Clase abstracta que esta implementada por la Interface IContenedor
  * 
@@ -67,27 +69,7 @@ public abstract class Contenedor implements IContenedor {
 //		implementado por las clases descendientes de Contenedor como es Bolsa y Caja
 		return alto * getSuperficie();
 	}
-
-	/**
-	 * Obtenemos la resistencia de los contenedores
-	 * 
-	 * ¿ No debería de estar implementando en la clase hija porque cada Bolsa y Caja
-	 * tiene una resistencia distinta
-	 */
-	@Override
-	public int getResistencia() {
-		return resistencia;
-	}
-
-	/**
-	 * Almacena y devuelve un conjunto de productos que contiene el contenedor del
-	 * tipo que sea
-	 */
-	@Override
-	public Set<IProducto> getProductos() {
-		return productos;
-	}
-
+	
 	/**
 	 * No sabemos el volumen del Contenedor por eso no lo podemos implementar
 	 * 
@@ -98,6 +80,29 @@ public abstract class Contenedor implements IContenedor {
 	public int volumenDisponible() {
 		// TODO Auto-generated method stub
 		return 0;
+	}
+
+	/**
+	 * Obtenemos la resistencia de los contenedores
+	 * 
+	 * ¿ No debería de estar implementando en la clase hija porque cada Bolsa y Caja
+	 * tiene una resistencia distinta ?
+	 */
+	@Override
+	public int getResistencia() {
+		return resistencia;
+	}
+
+	/**
+	 * Devuelve un conjunto de productos que contiene el contenedor
+	 * 
+	 * Metodo heredado por la Interface IContenedor y que lo implementa la clase
+	 * abstracta Productos
+	 * 
+	 */
+	@Override
+	public Set<IProducto> getProductos() {
+		return productos;
 	}
 
 	/**
@@ -123,7 +128,21 @@ public abstract class Contenedor implements IContenedor {
 		// TODO Auto-generated method stub
 		return false;
 	}
+	
+	/**
+	 * Metodo de instancia heredado de la interface IContenedores
+	 * 
+	 * Las subclase 'Caja' y 'Bolsa' implmentarán el metodo
+	 * 
+	 */
+	@Override
+	public TipoContenedor getTipo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
+//	Metodo deshechado por TipoContenedor getTipo
+//	
 //	@Override
 //	Metodo para los hijo
 //	public String getTipo() {

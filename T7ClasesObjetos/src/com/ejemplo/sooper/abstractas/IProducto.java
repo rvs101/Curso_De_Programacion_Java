@@ -2,6 +2,8 @@ package com.ejemplo.sooper.abstractas;
 
 /**
  * 
+ * Invoca la clase enum Categorias
+ * 
  * @author RVS
  *
  */

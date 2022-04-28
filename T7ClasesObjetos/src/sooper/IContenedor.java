@@ -40,18 +40,21 @@ public interface IContenedor {
 	int getResistencia();
 
 	/**
-	 * Obtener productos
+	 * Obtener un conjunto de productos
 	 * 
 	 * @return Interface de productos
 	 */
 	Set<IProducto> getProductos();
 
-	// Devuelve un objeto de 'tipo enum'
-	//
-	// • Antes era :
-	//
-	// String getTipo();
-	// ↓
+	/**
+	 * Devuelve un objeto de 'tipo enum'
+	 * 
+	 * • Antes era :
+	 * 
+	 * String getTipo(); ha pasado a TipoContenedor getTipo()
+	 * 
+	 * @return TipoContenedor - Enumerado para mostrar 'bolsa' o 'caja'
+	 */
 	TipoContenedor getTipo();
 
 	/**

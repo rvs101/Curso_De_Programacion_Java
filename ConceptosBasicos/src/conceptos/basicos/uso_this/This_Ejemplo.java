@@ -1,5 +1,10 @@
 package conceptos.basicos.uso_this;
 
+/**
+ * 
+ * @author RVS
+ *
+ */
 public class This_Ejemplo {
 
 	/**
@@ -7,14 +12,26 @@ public class This_Ejemplo {
 	 */
 	private static int x = 1;
 
+	/**
+	 * 
+	 */
 	public This_Ejemplo() {
+		x = 0;
 	}
 
+	/**
+	 * 
+	 * @param x
+	 */
 	public This_Ejemplo(int x) {
 // Este "this" hace referencia al constructor anterior
 		this();
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public static int getX() {
 		return x++;
 	}

@@ -32,8 +32,9 @@ public interface IProducto {
 	int getVolumen();
 
 	/**
+	 * Metodo antiguo que ahora es sustituido por Categoria getCategoria
 	 * 
-	 * @return
+	 * @return String - Devuelve un objeto String Categorias
 	 */
 //	String getCategoria();
 

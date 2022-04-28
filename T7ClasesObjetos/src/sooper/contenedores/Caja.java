@@ -39,7 +39,8 @@ public class Caja extends Contenedor {
 //	}
 
 	/**
-	 * Enumerado del tipo Caja
+	 * Enumerado del tipo <b>Bolsa</b> definido y heredado de <b>IContenedor</b>
+	 * 
 	 */
 	@Override
 	public TipoContenedor getTipo() {
