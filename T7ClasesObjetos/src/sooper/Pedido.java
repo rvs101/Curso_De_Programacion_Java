@@ -18,25 +18,41 @@ import java.util.Set;
  */
 public class Pedido implements IPedido {
 
-//	Atributo de instancia
+	/**
+	 * Atributo de instancia
+	 * 
+	 * Almacena String de referencia
+	 */
 	private String referencia;
-//	Atributo de instancia - Permite llamar metodos de la Interface <IContenedor>
-//	            Interface     Referencia
-//                 ↓	          ↓
+
+	/**
+	 * Atributo de instancia - Permite llamar metodos de la Interface <IContenedor>
+	 * 
+	 * Interface ↓ Interface Referencia ↓ ↓ ↓ ↓ ↓ ↓
+	 */
 	private Set<IContenedor> contenedores;
+
+	/**
+	 * Constructor por defecto
+	 */
+	public Pedido() {
+		// TODO Auto-generated constructor stub
+	}
 
 	/**
 	 * Constructor de la clase Pedido
 	 * 
-	 * this.contenedores → Objeto intermediario para almacenar todos los contenedor
-	 * que reciba el Pedido
+	 * this.contenedores → Objeto intermediario para almacenar todos los
+	 * contenedores que reciba el Pedido
 	 * 
 	 * @param referencia Recibe una referencia
 	 */
 	public Pedido(String referencia) {
 //		Almacena en el objeto la referecia que le pasemos
 		this.referencia = referencia;
-//		Cuando crea un objeto del Tipo Pedido creare una referencia a la clase HashSet para crear objeto
+//		Creamos un conjunto de Contenedores vacio y generico para implimentar los metodos de la Interface Set
+//		                        Implementación de la Interface
+//		                             ↓
 		this.contenedores = new HashSet<>();
 	}
 
@@ -51,26 +67,37 @@ public class Pedido implements IPedido {
 	}
 
 	/**
+	 * Devuelve un conjuntos de productos
 	 * 
-	 * 
-	 * @return Devuelve un producto del tipo Interface Producto null
+	 * @return Un producto del tipo Interface Producto null
 	 */
 	@Override
 	public Set<IProducto> getProductos() {
+		// TODO Auto-generated method stub
 		return null;
 	}
 
 	/**
-	 * @return Devuelve un contenedor del tipo Interface Contenedor
+	 * Devuelve un conjuntos de contenedores
+	 * 
+	 * Metodo heredado por la Interfaz IPedido el cual utiliza la Interfaz Set para
+	 * definir un conjunto de Contenedores que serán implementados por la clase
+	 * HashSet
+	 * 
+	 * @return Un conjunto de contenedores del tipo Interface Contenedor creado en
+	 *         la Intefaz IPedido e implementado por Pedido
 	 */
 	@Override
 	public Set<IContenedor> getContenedores() {
-		// TODO Auto-generated method stub
 		return contenedores;
 	}
 
 	/**
-	 * Añadir el contenedor recibido al conjunto de contenedores
+	 * Añadir un objeto de tipo contenedor dentro de un objeto Pedido
+	 * 
+	 * Añadir un objeto de tipo contenedor dentro del objeto pedido el cual recibido
+	 * al conjunto de contenedores generado por la Interfaces IPedido e implementada
+	 * dentro del constructor de Pedidos mediante la clase HashSet
 	 * 
 	 * 1º <Interface Set> permite que la "Clase HashSet" pueda invocar el metodo
 	 * 'add'
@@ -79,7 +106,7 @@ public class Pedido implements IPedido {
 	 * 
 	 * 3º Añade un objeto de la Interface IContenedor
 	 * 
-	 * @param Recibe como tipo de dato una Interface IContenedor
+	 * @param IContenedor - Recibe como tipo de dato una Interface IContenedor
 	 */
 	@Override
 	public void addContenedor(IContenedor contenedor) {

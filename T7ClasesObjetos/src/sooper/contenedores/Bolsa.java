@@ -12,7 +12,9 @@ import sooper.enums.TipoContenedor;
  */
 public class Bolsa extends Contenedor {
 
-//	Variable de instancia
+	/**
+	 * 	Variable de instancia
+	 */
 	private int ancho;
 
 	/**
@@ -38,7 +40,9 @@ public class Bolsa extends Contenedor {
 //	}
 
 	/**
-	 * Enumerado del tipo Bolsa
+	 * Enumerado del tipo <b>Bolsa</b> definido y heredado de <b>IContenedor</b>
+	 * 
+	 * @return BOLSA - Devuelve un elemento enum del tipo BOLSA
 	 */
 	@Override
 	public TipoContenedor getTipo() {
