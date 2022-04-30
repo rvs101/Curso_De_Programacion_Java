@@ -24,7 +24,7 @@ public class Bolsas extends Contenedores {
 	 * @param ancho
 	 */
 	public Bolsas(String referencias, int altos, int ancho) {
-		super(referencias, altos);
+		super(referencias, altos , 0);
 		this.ancho = ancho;
 	}
 
@@ -42,7 +42,7 @@ public class Bolsas extends Contenedores {
 	 * 
 	 * @return int - Devuelve la superficie después de calcular el diametro
 	 */
-	public int getSuperficie() {
+	public int getSuperficies() {
 		int radio = getDiametro() / 2;
 		return (int) (Math.PI * radio * radio);
 	}
@@ -54,6 +54,12 @@ public class Bolsas extends Contenedores {
 	 */
 	private int getDiametro() {
 		return (int) ((2 * ancho) / Math.PI);
+	}
+
+	@Override
+	public TipoContenedores getTipos() {
+		// TODO Auto-generated method stub
+		return TipoContenedores.BOLSA;
 	}
 
 }

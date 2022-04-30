@@ -125,4 +125,20 @@ public class Pedidos implements IPedidos {
 		return null;
 	}
 
+	/**
+	 * Metodo heredado de la Clase Object modificado para mostrar referencias y
+	 * contenedores
+	 * 
+	 * @return StringBuilder
+	 */
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		sb.append("Pedido: " + referencias + "\n");
+		for (IContenedores contenedor : contenedores) {
+			sb.append("\t" + contenedor + "\n");
+		}
+		return sb.toString();
+	}
+
 }
