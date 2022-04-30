@@ -38,7 +38,7 @@ public class Cajas extends Contenedores {
 	 * @param largo
 	 */
 	public Cajas(String referencias, int altos, int ancho, int largo) {
-		super(referencias, altos);
+		super(referencias, altos, 0);
 		this.ancho = ancho;
 		this.largo = largo;
 	}
@@ -57,8 +57,14 @@ public class Cajas extends Contenedores {
 	 * 
 	 * @return int - Devuelve la superficie total de una Caja
 	 */
-	public int getSuperficie() {
+	public int getSuperficies() {
 		return ancho * largo;
+	}
+
+	@Override
+	public TipoContenedores getTipos() {
+		// TODO Auto-generated method stub
+		return TipoContenedores.CAJA;
 	}
 
 }

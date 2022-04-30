@@ -19,6 +19,8 @@ import sooper.pedidos.Pedidos;
 public class Supermercados {
 
 	public static void main(String[] args) {
+		System.out.println("\t \t \t ♦ SuperMercado ♦ ");
+
 //      Hacer Pedidos 
 //      Interface implementa la clase concreta Pedido
 //	    Interface   obj          Clase concreta
@@ -32,12 +34,14 @@ public class Supermercados {
 //	    Interface      obj        Clase Hija
 		IContenedores caja1 = new Cajas("C222", 30, 50, 75);
 
-		// Añadir objeto del tipo bolsa dentro de la colección de objetos de tipo contenedores
+		// Añadir objeto del tipo bolsa dentro de la colección de objetos de tipo
+		// contenedores
 //		"objeto contenedor" añade en la "posición 0" → un objeto de "tipo bolsa1"
 		miPedido.addContenedores(bolsa1);
 		// Añadir objeto del tipo caja dentro de la colección
 //		"objeto contenedor" añade en la "posición 1" → un objeto de "tipo caja1"
 		miPedido.addContenedores(caja1);
+		System.out.println(" © Mi pedido con contenedores: " + miPedido);
 
 //2º	Añadir Productos
 //		Interface objeto         Clase Hija(Implementación)
@@ -55,7 +59,23 @@ public class Supermercados {
 		IContenedores contPapel = miPedido.addProductos(papelWC);
 		IContenedores contPeras = miPedido.addProductos(peras);
 
-		System.out.println("♦ SuperMercado ♦ ");
+		System.out.println(" ® Mi pedido con productos : " + miPedido);
+
+//		Salida Por pantala de los objetos
+//		System.out.println("Mi pedido con contenedores: " + miPedido);
+//		System.out.println("Mi pedido con productos : " + miPedido);
+//		
+//		                                           Inteface IPedidos que paso a Pedidos al instanciar un objeto desde ella
+//													  ↓	  Codigo Hexadecimal del código hash del objeto (id interno)		                                            
+//		                                              ↓      ↓
+//		Mi pedido con contenedores: sooper.pedidos.Pedidos@182decdb
+//		Mi pedido con productos : sooper.pedidos.Pedidos@182decdb
+
+		System.out.println(" Δ Bolsa: " + bolsa1);
+		System.out.println(" ■ Caja: " + caja1);
+
+//		Bolsa: sooper.contenedores.Bolsas@36aa7bc2
+//		Caja: sooper.contenedores.Cajas@76ccd017
 
 	}
 }

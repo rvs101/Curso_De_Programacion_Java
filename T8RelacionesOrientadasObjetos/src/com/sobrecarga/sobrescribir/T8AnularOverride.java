@@ -9,7 +9,8 @@ package com.sobrecarga.sobrescribir;
 public class T8AnularOverride {
 
 	public static void main(String[] args) {
-		Coche c = new Coche();
+		Coche coche1 = new Coche(4, 4, "Mercedes", "300 SL");
+		System.out.println(coche1.toString());
 	}
 }
 
@@ -62,29 +63,54 @@ class Coche {
 		this.puertas = puertas;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public int getPuertas() {
 		return puertas;
 	}
 
+	/**
+	 * 
+	 * @param modelo
+	 */
 	public void setModelo(String modelo) {
 		this.modelo = modelo;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public String getModelo() {
 		return modelo;
 	}
 
+	/**
+	 * 
+	 * @param nombre
+	 */
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public String getNombre() {
 		return nombre;
 	}
 
+	/**
+	 * Metodo heredado de la "Clase Object" reescrito para mostrar los valores
+	 * propios de la "Clase Coche"
+	 */
 	@Override
 	public String toString() {
-		return super.toString();
+		return "• Nombre: ".concat(getModelo()) + " Modelo: ".concat(getModelo()) + " Puertas: " + getPuertas()
+				+ " Ruedas: " + getRuedas();
 	}
 
 }
