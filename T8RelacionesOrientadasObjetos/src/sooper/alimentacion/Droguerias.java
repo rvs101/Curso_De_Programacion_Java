@@ -8,7 +8,7 @@ import sooper.enums.Categorias;
  * @author RVS
  * @time 25 abr 2022 - 14:22:15
  */
-public class Drogueria extends Productos {
+public class Droguerias extends Productos {
 
 	/**
 	 * Constructor con parametros del constructor padre
@@ -16,7 +16,7 @@ public class Drogueria extends Productos {
 	 * Define los objetos que vayamos a crear cada vez que instanciemos un objeto
 	 * 
 	 */
-	public Drogueria(String referencia, int peso, int volumen) {
+	public Droguerias(String referencia, int peso, int volumen) {
 //		Invoco al constructor de la clase Padre Productos
 		super(referencia, peso, volumen);
 	}
@@ -40,8 +40,8 @@ public class Drogueria extends Productos {
 	 */
 	@Override
 	public boolean esCompatibles(IProductos p) {
-		// TODO Auto-generated method stub
-		return false;
+//Todos lo que no sean alimentos ni mascotas
+		return !Categorias.ALIMENTACION.equals(p.getCategorias()) && !Categorias.MASCOTAS.equals(p.getCategorias());
 	}
 
 }

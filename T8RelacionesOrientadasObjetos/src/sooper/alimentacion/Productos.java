@@ -43,6 +43,13 @@ public abstract class Productos implements IProductos {
 	private int volumenes;
 
 	/**
+	 * Atributos de Instancia
+	 * 
+	 * Para meter un producto dentro de un contenedor
+	 */
+	private IContenedores contenedores;
+
+	/**
 	 * Constructor por defecto
 	 */
 	public Productos() {
@@ -123,16 +130,28 @@ public abstract class Productos implements IProductos {
 	 */
 	@Override
 	public boolean tengoEspacios(IContenedores contenedores) {
-		// TODO Auto-generated method stub
-		return false;
+		return contenedores.volumenDisponibles() > volumenes;
 	}
 
 	/**
+	 * Procedimiento para indicar en que contenedor hemos metido el Producto
 	 * 
 	 */
 	@Override
 	public void meters(IContenedores contenedores) {
+//	Ahora Producto sabe en que contenedor va
+		this.contenedores = contenedores;
+	}
 
+	/**
+	 * Metodo de instancia heredado de la Super Clase Object
+	 * 
+	 * @return Muestra todos los valores de la clase
+	 */
+	@Override
+	public String toString() {
+		return "Producto [categoria=" + getCategorias() + ", referencia=" + referencias + ",peso=" + pesos
+				+ ", volumen=" + volumenes + ", contenedores=" + contenedores.getReferencias() + "]";
 	}
 
 }

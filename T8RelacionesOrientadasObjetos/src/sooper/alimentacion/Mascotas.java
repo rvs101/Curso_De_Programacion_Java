@@ -49,7 +49,8 @@ public class Mascotas extends Productos {
 	 */
 	@Override
 	public boolean esCompatibles(IProductos p) {
-		return false;
+// Todos los Productos que no sean Drogueria		
+		return !Categorias.DROGUERIA.equals(p.getCategorias());
 	}
 
 }

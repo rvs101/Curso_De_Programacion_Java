@@ -1,6 +1,5 @@
 package sooper.alimentacion;
 
-
 import sooper.enums.Categorias;
 
 /**
@@ -51,8 +50,8 @@ public class Alimentacion extends Productos {
 	 */
 	@Override
 	public boolean esCompatibles(IProductos p) {
-		// TODO Auto-generated method stub
-		return false;
+//		Productos de Alimentación no se pueden mezclar con los Productos de otro tipo
+		return Categorias.ALIMENTACION.equals(p.getCategorias());
 	}
 
 }

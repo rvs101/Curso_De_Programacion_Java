@@ -22,23 +22,17 @@ public class Bolsas extends Contenedores {
 	 * @param referencias
 	 * @param altos
 	 * @param ancho
+	 * @param resistencia - Calcular la resistencia de una Bolsa
 	 */
-	public Bolsas(String referencias, int altos, int ancho) {
-		super(referencias, altos , 0);
+	public Bolsas(String referencias, int altos, int ancho, int resistencia) {
+		super(referencias, altos, resistencia);
 		this.ancho = ancho;
 	}
 
 	/**
-	 * Enumerado del tipo <b>Bolsa</b> definido y heredado de <b>IContenedor</b>
-	 * 
-	 * @return BOLSA - Devuelve un elemento enum del tipo BOLSA
-	 */
-	public TipoContenedores getTipo() {
-		return TipoContenedores.BOLSA;
-	}
-
-	/**
 	 * Metodo heredado de la interfaz IContenedor
+	 * 
+	 * Devuelve la superficie de una Bolsa
 	 * 
 	 * @return int - Devuelve la superficie después de calcular el diametro
 	 */
@@ -48,17 +42,23 @@ public class Bolsas extends Contenedores {
 	}
 
 	/**
-	 * Metodo de clase
+	 * Metodo de Instancia
 	 * 
-	 * @return diametro como entero
+	 * Devuelve el diametro de una Bolsa
+	 * 
+	 * @return diametro de la Bolsa como valor entero
 	 */
 	private int getDiametro() {
 		return (int) ((2 * ancho) / Math.PI);
 	}
 
+	/**
+	 * Enumerado del tipo <b>Bolsa</b> definido y heredado de <b>IContenedor</b>
+	 * 
+	 * @return BOLSA - Devuelve un elemento enum del tipo BOLSA
+	 */
 	@Override
 	public TipoContenedores getTipos() {
-		// TODO Auto-generated method stub
 		return TipoContenedores.BOLSA;
 	}
 

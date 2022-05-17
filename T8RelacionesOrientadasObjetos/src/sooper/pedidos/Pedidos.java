@@ -75,8 +75,22 @@ public class Pedidos implements IPedidos {
 	 */
 	@Override
 	public Set<IProductos> getProductos() {
-		// TODO Auto-generated method stub
-		return null;
+// Creamos una colección de objetos del tipo productos mediante la interface Set<IProductos>		
+		Set<IProductos> productos = null;
+// Recorremos todos los objetos de la colección del tipo 'contenedores'		
+		for (IContenedores c : contenedores) {
+// ○ Si el objeto producto no contiene 'productos' 			
+			if (productos == null) {
+// Se lo añadimos con el metodo getProductos a la colección 'productos'
+				productos = c.getProductos();
+// • Sino				
+			} else {
+// Añadimos todos los objetos de la colección si no esta presente si el valor que lo almacena también es una colección 				
+				productos.addAll(c.getProductos());
+			}
+		}
+// Devuelve una colección de objetos de tipo producto que tenía los contenedores		
+		return productos;
 	}
 
 	/**
@@ -115,13 +129,28 @@ public class Pedidos implements IPedidos {
 	}
 
 	/**
-	 * Metodo de Instancia
+	 * Añadir Producto del Pedido dentro de un Contenedor recorriendo objetos del
+	 * tipo contenedores y en caso de no existir devolver 'null'
 	 * 
-	 * @return
+	 * @param - Le pasamos manzanas como parametro
+	 * 
+	 * @return Colección de objetos del tipo Contenedor en el caso de encontrar un
+	 *         "contenedor" donde meter el "producto" o "null" en caso de no
+	 *         encontrar un "contenedor" donde meter el objeto
 	 */
 	@Override
 	public IContenedores addProductos(IProductos productos) {
-		// TODO Auto-generated method stub
+//		Recorremos contenedores
+		for (IContenedores contenedor : contenedores) {
+// Comprobamos si admite o no el producto que queremos añadir
+//			Llamamos al método meter del contenedor , que nos devolverá un booleano indicando si lo ha metido o no
+			if (contenedor.meters(productos)) {
+//				hemos encontrado el contenedor , devuelve el contenedor en el que colocamos el producto
+				return contenedor;
+			}
+//False : Continua el bucle con el siguiente contenedor
+		}
+//Si terminamos todos los contenedores sin haber localizado sitio para el producto devolvemos 'null'
 		return null;
 	}
 

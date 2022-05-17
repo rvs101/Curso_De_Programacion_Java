@@ -1,5 +1,6 @@
 package sooper.contenedores;
 
+import sooper.alimentacion.IProductos;
 /**
  * Invocamos las clases que vamos a usar
  */
@@ -20,14 +21,14 @@ public class Cajas extends Contenedores {
 	 * 
 	 * Almacena el ancho de un objeto
 	 */
-	private int ancho;
+	private int anchos;
 
 	/**
 	 * Atributo de instancia
 	 * 
 	 * Almacena el largo de un objeto
 	 */
-	private int largo;
+	private int largos;
 
 	/**
 	 * Crea un objeto de tipo Caja
@@ -37,19 +38,10 @@ public class Cajas extends Contenedores {
 	 * @param ancho
 	 * @param largo
 	 */
-	public Cajas(String referencias, int altos, int ancho, int largo) {
+	public Cajas(String referencias, int altos, int anchos, int largos) {
 		super(referencias, altos, 0);
-		this.ancho = ancho;
-		this.largo = largo;
-	}
-
-	/**
-	 * Devuelve un objeto de tipo enum
-	 * 
-	 * @return enum Caja - Devuelve un elemento de tipo enum llamado CAJA
-	 */
-	public TipoContenedores getTipo() {
-		return TipoContenedores.CAJA;
+		this.anchos = anchos;
+		this.largos = largos;
 	}
 
 	/**
@@ -58,9 +50,25 @@ public class Cajas extends Contenedores {
 	 * @return int - Devuelve la superficie total de una Caja
 	 */
 	public int getSuperficies() {
-		return ancho * largo;
+		return anchos * largos;
 	}
 
+	/**
+	 * Metodo heredado de IContenedor
+	 * 
+	 */
+	@Override
+	public boolean resistes(IProductos productos) {
+		return true;
+	}
+
+	/**
+	 * Metodod heredado de IContenedor
+	 * 
+	 * Devuelve un objeto de tipo enum
+	 * 
+	 * @return Devuelve un objeto del tipo enum TipoContenedores.Caja
+	 */
 	@Override
 	public TipoContenedores getTipos() {
 		// TODO Auto-generated method stub
