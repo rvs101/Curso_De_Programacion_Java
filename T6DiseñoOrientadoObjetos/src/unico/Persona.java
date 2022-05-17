@@ -1,7 +1,5 @@
 package unico;
 
-import unico.Vehiculo;
-
 public class Persona {
 
 	private String docld;

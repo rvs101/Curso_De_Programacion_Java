@@ -47,7 +47,8 @@ public class Higienes extends Productos {
 	 */
 	@Override
 	public boolean esCompatibles(IProductos p) {
-		return false;
+//		Vale cualquier Producto salvo los de Alimentación
+		return !Categorias.ALIMENTACION.equals(p.getCategorias());
 	}
 
 }
