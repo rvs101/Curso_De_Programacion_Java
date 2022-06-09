@@ -1,0 +1,36 @@
+
+lanzarExcepcionSinDetalle();
+
+Exception in thread "main" java.lang.Exception
+	at ejemplo.practico.pag283.memoria.historica.Pag283MemoriaHistorica.lanzarExcepcionSinDetalle(Pag283MemoriaHistorica.java:22)
+	
+22-		throw new Exception();
+				
+	at ejemplo.practico.pag283.memoria.historica.Pag283MemoriaHistorica.main(Pag283MemoriaHistorica.java:47)
+	
+		lanzarExcepcionSinDetalle();
+
+------------------
+
+lanzarExcepcionConDetalle()
+
+Exception in thread "main" java.lang.Exception: java.lang.NullPointerException: Cannot invoke "ejemplo.practico.pag283.memoria.historica.Nulo3.loQueSea()" because "nulo" is null
+	at ejemplo.practico.pag283.memoria.historica.Pag283MemoriaHistorica.lanzarExcepcionConDetalle(Pag283MemoriaHistorica.java:37)
+	
+37-			throw new Exception(npe);
+	
+	at ejemplo.practico.pag283.memoria.historica.Pag283MemoriaHistorica.main(Pag283MemoriaHistorica.java:48)
+		 
+			public static void main(String[] args) throws Exception {
+		 
+48-				lanzarExcepcionConDetalle();
+		
+Caused by: java.lang.NullPointerException: Cannot invoke "ejemplo.practico.pag283.memoria.historica.Nulo3.loQueSea()" because "nulo" is null
+	at ejemplo.practico.pag283.memoria.historica.Pag283MemoriaHistorica.lanzarExcepcionConDetalle(Pag283MemoriaHistorica.java:34)
+ 
+			try {
+34-					nulo.loQueSea();
+				} catch (NullPointerException npe) {
+				
+						throw new Exception(npe);
+				}
