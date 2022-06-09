@@ -1,0 +1,18 @@
+
+public class Pag263TryCatch{
+	
+ private void noQuieroParesNiNegativos(int a) throws ParException , NegativoException{
+	if(esPar(a)){
+		throw new ParException(a + " es!");
+	}
+	
+	if(a < 0){
+		throw new NegativoException(a + " es negativo : "));
+	}
+	
+ }
+
+public final static void main(String[] args) throws Exception{
+	noQuieroParesNiNegativos(Integer.parseInt(args[0]));
+	}
+}

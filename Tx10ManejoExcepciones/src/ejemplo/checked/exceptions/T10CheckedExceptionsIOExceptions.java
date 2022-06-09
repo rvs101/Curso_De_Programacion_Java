@@ -4,10 +4,16 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.MalformedURLException;
 
-public class T10CheckedExceptionsIOError {
+/**
+ * Object → Throwable → Exception → IOExceptions -> FileNotFoundException
+ * 
+ * @author RVS
+ * @time 19 may 2022 - 12:08:33
+ *
+ */
+public class T10CheckedExceptionsIOExceptions {
 
 	public static void main(String[] args) {
-
 //		Señala que se ha producido una excepción de E/S de algún tipo. 
 //		Esta clase es la clase general de excepciones producidas por operaciones de E/S fallidas o interrumpidas.
 		IOException ioe = new IOException();

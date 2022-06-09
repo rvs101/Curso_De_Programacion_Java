@@ -15,8 +15,10 @@ public class T10RuntimeExceptionNullPointerExceptions {
 	public static void main(String[] args) {
 
 //		La variable del tipo Object no apunta a ningún sitio
-		Object nada = null;
+//		Object nada = null;
+		String nada = null;
 		nada.toString(); // Java.lang.NullPointerException :
 //		System.out.println(nada);
 	}
 }
+
