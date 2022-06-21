@@ -1,0 +1,97 @@
+2022-06-21 20:08:56,162 main DEBUG Apache Log4j Core 2.17.0 initializing configuration org.apache.logging.log4j.core.config.properties.PropertiesConfiguration@305b7c14
+2022-06-21 20:08:56,181 main DEBUG Installed 0 script engines
+2022-06-21 20:08:56,182 main DEBUG PluginManager 'Core' found 127 plugins
+2022-06-21 20:08:56,182 main DEBUG PluginManager 'Level' found 0 plugins
+2022-06-21 20:08:56,185 main DEBUG PluginManager 'Lookup' found 16 plugins
+2022-06-21 20:08:56,186 main DEBUG Building Plugin[name=AppenderRef, class=org.apache.logging.log4j.core.config.AppenderRef].
+2022-06-21 20:08:56,200 main DEBUG PluginManager 'TypeConverter' found 26 plugins
+2022-06-21 20:08:56,209 main DEBUG createAppenderRef(ref="LogToConsole", level="null", Filter=null)
+2022-06-21 20:08:56,209 main DEBUG Building Plugin[name=AppenderRef, class=org.apache.logging.log4j.core.config.AppenderRef].
+2022-06-21 20:08:56,210 main DEBUG createAppenderRef(ref="LogToRollingFile", level="null", Filter=null)
+2022-06-21 20:08:56,210 main DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2022-06-21 20:08:56,219 main DEBUG createLogger(additivity="false", level="DEBUG", name="cap13.trazas", includeLocation="null", ={LogToConsole, LogToRollingFile}, ={}, Configuration, Filter=null)
+2022-06-21 20:08:56,222 main DEBUG Building Plugin[name=AppenderRef, class=org.apache.logging.log4j.core.config.AppenderRef].
+2022-06-21 20:08:56,222 main DEBUG createAppenderRef(ref="LogToConsole", level="null", Filter=null)
+2022-06-21 20:08:56,223 main DEBUG Building Plugin[name=root, class=org.apache.logging.log4j.core.config.LoggerConfig$RootLogger].
+2022-06-21 20:08:56,223 main DEBUG createLogger(additivity="null", level="WARN", includeLocation="null", ={LogToConsole}, ={}, Configuration, Filter=null)
+2022-06-21 20:08:56,224 main DEBUG Building Plugin[name=loggers, class=org.apache.logging.log4j.core.config.LoggersPlugin].
+2022-06-21 20:08:56,225 main DEBUG createLoggers(={cap13.trazas, root})
+2022-06-21 20:08:56,225 main DEBUG Building Plugin[name=layout, class=org.apache.logging.log4j.core.layout.PatternLayout].
+2022-06-21 20:08:56,229 main DEBUG PatternLayout$Builder(pattern="%p %C{1.} > %m%n", PatternSelector=null, Configuration, Replace=null, charset="null", alwaysWriteExceptions="null", disableAnsi="null", noConsoleNoAnsi="null", header="null", footer="null")
+2022-06-21 20:08:56,230 main DEBUG PluginManager 'Converter' found 45 plugins
+2022-06-21 20:08:56,231 main DEBUG Building Plugin[name=TimeBasedTriggeringPolicy, class=org.apache.logging.log4j.core.appender.rolling.TimeBasedTriggeringPolicy].
+2022-06-21 20:08:56,234 main DEBUG TimeBasedTriggeringPolicy$Builder(interval="null", modulate="null", maxRandomDelay="null")
+2022-06-21 20:08:56,234 main DEBUG Building Plugin[name=SizeBasedTriggeringPolicy, class=org.apache.logging.log4j.core.appender.rolling.SizeBasedTriggeringPolicy].
+2022-06-21 20:08:56,234 main DEBUG createPolicy(size="1KB")
+2022-06-21 20:08:56,236 main DEBUG Building Plugin[name=Policies, class=org.apache.logging.log4j.core.appender.rolling.CompositeTriggeringPolicy].
+2022-06-21 20:08:56,237 main DEBUG createPolicy(={TimeBasedTriggeringPolicy(nextRolloverMillis=0, interval=1, modulate=false), SizeBasedTriggeringPolicy(size=1024)})
+2022-06-21 20:08:56,237 main DEBUG Building Plugin[name=DefaultRolloverStrategy, class=org.apache.logging.log4j.core.appender.rolling.DefaultRolloverStrategy].
+2022-06-21 20:08:56,240 main DEBUG DefaultRolloverStrategy$Builder(max="10", min="null", fileIndex="null", compressionLevel="null", ={}, stopCustomActionsOnError="null", tempCompressedFilePattern="null", Configuration)
+2022-06-21 20:08:56,241 main DEBUG Building Plugin[name=appender, class=org.apache.logging.log4j.core.appender.RollingFileAppender].
+2022-06-21 20:08:56,245 main DEBUG RollingFileAppender$Builder(fileName="logs/trazas.log", filePattern="logs/${date:yyyy-MM}/trazas-%d{yyyyMMdd}-%i.log.gz", append="null", locking="null", Policies(CompositeTriggeringPolicy(policies=[TimeBasedTriggeringPolicy(nextRolloverMillis=0, interval=1, modulate=false), SizeBasedTriggeringPolicy(size=1024)])), DefaultRolloverStrategy(DefaultRolloverStrategy(min=1, max=10, useMax=true)), advertise="null", advertiseUri="null", createOnDemand="null", filePermissions="null", fileOwner="null", fileGroup="null", bufferedIo="null", bufferSize="null", immediateFlush="null", ignoreExceptions="null", PatternLayout(%p %C{1.} > %m%n), name="LogToRollingFile", Configuration, Filter=null, ={})
+2022-06-21 20:08:56,253 main DEBUG Returning file creation time for D:\!Proyectos_Eclipse\Curso_De_Programacion_Java\cap13\trazas\logs\trazas.log
+2022-06-21 20:08:56,254 main DEBUG Starting RollingFileManager logs/trazas.log
+2022-06-21 20:08:56,256 main DEBUG PluginManager 'FileConverter' found 2 plugins
+2022-06-21 20:08:56,267 main DEBUG Setting prev file time to 2022-06-21T20:05:28.369+0200
+2022-06-21 20:08:56,267 main DEBUG Initializing triggering policy CompositeTriggeringPolicy(policies=[TimeBasedTriggeringPolicy(nextRolloverMillis=0, interval=1, modulate=false), SizeBasedTriggeringPolicy(size=1024)])
+2022-06-21 20:08:56,267 main DEBUG Initializing triggering policy TimeBasedTriggeringPolicy(nextRolloverMillis=0, interval=1, modulate=false)
+2022-06-21 20:08:56,268 main DEBUG Initializing triggering policy SizeBasedTriggeringPolicy(size=1024)
+2022-06-21 20:08:56,268 main DEBUG Building Plugin[name=layout, class=org.apache.logging.log4j.core.layout.PatternLayout].
+2022-06-21 20:08:56,268 main DEBUG PatternLayout$Builder(pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} [%-5level] - %msg%n", PatternSelector=null, Configuration, Replace=null, charset="null", alwaysWriteExceptions="null", disableAnsi="null", noConsoleNoAnsi="null", header="null", footer="null")
+2022-06-21 20:08:56,269 main DEBUG Building Plugin[name=appender, class=org.apache.logging.log4j.core.appender.ConsoleAppender].
+2022-06-21 20:08:56,271 main DEBUG ConsoleAppender$Builder(target="null", follow="null", direct="null", bufferedIo="null", bufferSize="null", immediateFlush="null", ignoreExceptions="null", PatternLayout(%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} [%-5level] - %msg%n), name="LogToConsole", Configuration, Filter=null, ={})
+2022-06-21 20:08:56,273 main DEBUG Starting OutputStreamManager SYSTEM_OUT.false.false
+2022-06-21 20:08:56,273 main DEBUG Building Plugin[name=appenders, class=org.apache.logging.log4j.core.config.AppendersPlugin].
+2022-06-21 20:08:56,274 main DEBUG createAppenders(={LogToRollingFile, LogToConsole})
+2022-06-21 20:08:56,274 main DEBUG Configuration org.apache.logging.log4j.core.config.properties.PropertiesConfiguration@305b7c14 initialized
+2022-06-21 20:08:56,275 main DEBUG Starting configuration org.apache.logging.log4j.core.config.properties.PropertiesConfiguration@305b7c14
+2022-06-21 20:08:56,275 main DEBUG Started configuration org.apache.logging.log4j.core.config.properties.PropertiesConfiguration@305b7c14 OK.
+2022-06-21 20:08:56,275 main DEBUG Shutting down OutputStreamManager SYSTEM_OUT.false.false-1
+2022-06-21 20:08:56,276 main DEBUG OutputStream closed
+2022-06-21 20:08:56,276 main DEBUG Shut down OutputStreamManager SYSTEM_OUT.false.false-1, all resources released: true
+2022-06-21 20:08:56,276 main DEBUG Appender DefaultConsole-1 stopped with status true
+2022-06-21 20:08:56,276 main DEBUG Stopped org.apache.logging.log4j.core.config.DefaultConfiguration@16022d9d OK
+2022-06-21 20:08:56,368 main DEBUG Registering MBean org.apache.logging.log4j2:type=22d8cfe0
+2022-06-21 20:08:56,370 main DEBUG Registering MBean org.apache.logging.log4j2:type=22d8cfe0,component=StatusLogger
+2022-06-21 20:08:56,371 main DEBUG Registering MBean org.apache.logging.log4j2:type=22d8cfe0,component=ContextSelector
+2022-06-21 20:08:56,373 main DEBUG Registering MBean org.apache.logging.log4j2:type=22d8cfe0,component=Loggers,name=
+2022-06-21 20:08:56,373 main DEBUG Registering MBean org.apache.logging.log4j2:type=22d8cfe0,component=Loggers,name=cap13.trazas
+2022-06-21 20:08:56,374 main DEBUG Registering MBean org.apache.logging.log4j2:type=22d8cfe0,component=Appenders,name=LogToConsole
+2022-06-21 20:08:56,374 main DEBUG Registering MBean org.apache.logging.log4j2:type=22d8cfe0,component=Appenders,name=LogToRollingFile
+2022-06-21 20:08:56,376 main DEBUG org.apache.logging.log4j.core.util.SystemClock supports precise timestamps.
+2022-06-21 20:08:56,376 main DEBUG Reconfiguration complete for context[name=22d8cfe0] at URI D:\!Proyectos_Eclipse\Curso_De_Programacion_Java\cap13\trazas\target\classes\log4j2.properties (org.apache.logging.log4j.core.LoggerContext@56dc1551) with optional ClassLoader: null
+2022-06-21 20:08:56,376 main DEBUG Shutdown hook enabled. Registering a new one.
+2022-06-21 20:08:56,377 main DEBUG LoggerContext[name=22d8cfe0, org.apache.logging.log4j.core.LoggerContext@56dc1551] started OK.
+2022-06-21 20:08:56.385 [main] App [FATAL] - Nivel actual del log: DEBUG
+2022-06-21 20:08:56,387 main DEBUG Formatting file name. useCurrentTime=false. currentFileTime=0, prevFileTime=1655762400000
+2022-06-21 20:08:56,389 main DEBUG Current file: logs/trazas.log
+2022-06-21 20:08:56,390 main DEBUG Formatting file name. useCurrentTime=false. currentFileTime=0, prevFileTime=1655762400000
+2022-06-21 20:08:56,392 main DEBUG OutputStream closed
+2022-06-21 20:08:56,393 main DEBUG RollingFileManager executing synchronous FileRenameAction[logs\trazas.log to logs\2022-06\trazas-20220621-2.log, renameEmptyFiles=false]
+2022-06-21 20:08:56,394 main DEBUG RollingFileManager executing async GzCompressAction[logs\2022-06\trazas-20220621-2.log to logs\2022-06\trazas-20220621-2.log.gz, deleteSource=true]
+2022-06-21 20:08:56,395 main DEBUG Now writing to logs/trazas.log at 2022-06-21T20:08:56.395+0200
+2022-06-21 20:08:56.397 [main] App [DEBUG] - hola debug
+2022-06-21 20:08:56.397 [main] App [INFO ] - hola info
+2022-06-21 20:08:56.398 [main] App [WARN ] - hola warn
+2022-06-21 20:08:56.398 [main] App [ERROR] - hola error
+2022-06-21 20:08:56.398 [main] App [FATAL] - hola fatal
+2022-06-21 20:08:56.399 [main] App [INFO ] - otra forma de hacerlo
+*** Aqui hacemos algo muy muy pesado 1
+2022-06-21 20:08:56.399 [main] App [INFO ] - *** Aqui hacemos algo muy muy pesado 1
+*** Aqui hacemos algo muy muy pesado 2
+2022-06-21 20:08:56.399 [main] App [INFO ] - *** Aqui hacemos algo muy muy pesado 2
+2022-06-21 20:08:56,400 pool-1-thread-1 DEBUG Stopping LoggerContext[name=22d8cfe0, org.apache.logging.log4j.core.LoggerContext@56dc1551]
+2022-06-21 20:08:56,401 pool-1-thread-1 DEBUG Stopping LoggerContext[name=22d8cfe0, org.apache.logging.log4j.core.LoggerContext@56dc1551]...
+2022-06-21 20:08:56,402 pool-1-thread-1 DEBUG Shutting down RollingFileManager logs/trazas.log
+2022-06-21 20:08:56,402 pool-1-thread-1 DEBUG Shutting down RollingFileManager logs/trazas.log
+2022-06-21 20:08:56,403 pool-1-thread-1 DEBUG OutputStream closed
+2022-06-21 20:08:56,403 pool-1-thread-1 DEBUG All asynchronous threads have terminated
+2022-06-21 20:08:56,403 pool-1-thread-1 DEBUG RollingFileManager shutdown completed with status true
+2022-06-21 20:08:56,403 pool-1-thread-1 DEBUG Shut down RollingFileManager logs/trazas.log, all resources released: true
+2022-06-21 20:08:56,404 pool-1-thread-1 DEBUG Appender LogToRollingFile stopped with status true
+2022-06-21 20:08:56,404 pool-1-thread-1 DEBUG Shutting down OutputStreamManager SYSTEM_OUT.false.false
+2022-06-21 20:08:56,404 pool-1-thread-1 DEBUG OutputStream closed
+2022-06-21 20:08:56,404 pool-1-thread-1 DEBUG Shut down OutputStreamManager SYSTEM_OUT.false.false, all resources released: true
+2022-06-21 20:08:56,404 pool-1-thread-1 DEBUG Appender LogToConsole stopped with status true
+2022-06-21 20:08:56,405 pool-1-thread-1 DEBUG Stopped org.apache.logging.log4j.core.config.properties.PropertiesConfiguration@305b7c14 OK
+2022-06-21 20:08:56,405 pool-1-thread-1 DEBUG Stopped LoggerContext[name=22d8cfe0, org.apache.logging.log4j.core.LoggerContext@56dc1551] with status true

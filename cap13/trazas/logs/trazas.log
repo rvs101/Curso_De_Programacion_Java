@@ -1,0 +1,18 @@
+FATAL c.t.App > Nivel actual del log: DEBUG
+DEBUG c.t.App > hola debug
+INFO c.t.App > hola info
+WARN c.t.App > hola warn
+ERROR c.t.App > hola error
+FATAL c.t.App > hola fatal
+INFO c.t.App > otra forma de hacerlo
+INFO c.t.App > *** Aqui hacemos algo muy muy pesado 1
+INFO c.t.App > *** Aqui hacemos algo muy muy pesado 2
+FATAL c.t.App > Nivel actual del log: DEBUG
+DEBUG c.t.App > hola debug
+INFO c.t.App > hola info
+WARN c.t.App > hola warn
+ERROR c.t.App > hola error
+FATAL c.t.App > hola fatal
+INFO c.t.App > otra forma de hacerlo
+INFO c.t.App > *** Aqui hacemos algo muy muy pesado 1
+INFO c.t.App > *** Aqui hacemos algo muy muy pesado 2
