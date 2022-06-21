@@ -1,0 +1,26 @@
+## Contenido de programa ##
+
+• Creamos metodo main implementaremos los pasos que nos han pedido
+
+• Declaramos constantes 
+	• Nombre de los ficheros de entrada/salida 
+
+1- Clase Scanner
+
+	1.1- Validar datos
+	
+	1.2- Diccionario de jugadores ( Interface Map )
+		 • Key = Valores Colección
+		 	♦ Key = Nombre de Jugador
+		 	♦ Value = Puntuación
+	
+	1.3- Trazar (Trace) con 'info' 
+
+2- Cada elemento de diccionario (Interface Map) imprimiremos nombre y puntuación por consola
+
+
+3- Clase Scanner 
+	• Pedimos confirmación al usuario sobre los datos
+		• Si acepta escribe en disco el Diccionario de datos
+
+4 - Tratar las Excepciones mediante (Runtime)
