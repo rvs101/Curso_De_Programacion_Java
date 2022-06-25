@@ -1,0 +1,40 @@
+2022-06-25 20:44:10.344 [main] RecordsManager [WARN ] - El nombre del jugador (Pedro) es demasiado corto.
+ El nuevo nombre de usuario es Pedro7
+2022-06-25 20:44:10.346 [main] RecordsManager [ERROR] - El usuario Juanjo tiene menos puntos (165) de los requeridos.
+ Jugador descartado
+2022-06-25 20:44:10.346 [main] RecordsManager [WARN ] - El nombre del jugador (An) es demasiado corto.
+ El nuevo nombre de usuario es An3759
+2022-06-25 20:44:10.346 [main] RecordsManager [WARN ] - El nombre del jugador (Li) es demasiado corto.
+ El nuevo nombre de usuario es Li1030
+2022-06-25 20:44:10.346 [main] RecordsManager [ERROR] - El usuario Li1030 tiene menos puntos (12) de los requeridos.
+ Jugador descartado
+2022-06-25 20:44:10.347 [main] RecordsManager [WARN ] - El nombre del jugador (Alex) es demasiado corto.
+ El nuevo nombre de usuario es Alex68
+2022-06-25 20:44:10.347 [main] RecordsManager [ERROR] - El usuario Alex68 tiene menos puntos (987) de los requeridos.
+ Jugador descartado
+Datos procesados: 
+Margarita:	12345
+An3759:	123456
+Pedro7:	2134
+
+2022-06-25 20:46:43.519 [main] RecordsManager [WARN ] - El nombre del jugador (Pedro) es demasiado corto.
+ El nuevo nombre de usuario es Pedro9
+2022-06-25 20:46:43.521 [main] RecordsManager [ERROR] - El usuario Juanjo tiene menos puntos (165) de los requeridos.
+ Jugador descartado
+2022-06-25 20:46:43.521 [main] RecordsManager [WARN ] - El nombre del jugador (An) es demasiado corto.
+ El nuevo nombre de usuario es An3718
+2022-06-25 20:46:43.521 [main] RecordsManager [WARN ] - El nombre del jugador (Li) es demasiado corto.
+ El nuevo nombre de usuario es Li0821
+2022-06-25 20:46:43.521 [main] RecordsManager [ERROR] - El usuario Li0821 tiene menos puntos (12) de los requeridos.
+ Jugador descartado
+2022-06-25 20:46:43.522 [main] RecordsManager [WARN ] - El nombre del jugador (Alex) es demasiado corto.
+ El nuevo nombre de usuario es Alex06
+2022-06-25 20:46:43.522 [main] RecordsManager [ERROR] - El usuario Alex06 tiene menos puntos (987) de los requeridos.
+ Jugador descartado
+Datos procesados: 
+Margarita:	12345
+An3718:	123456
+Pedro9:	2134
+¿Son correctos? [S]i/[N]o
+S
+Procedemos al volcado de datos del fichero...
