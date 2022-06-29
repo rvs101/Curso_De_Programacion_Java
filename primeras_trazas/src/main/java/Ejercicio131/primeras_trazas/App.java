@@ -1,7 +1,5 @@
 package Ejercicio131.primeras_trazas;
 
-import java.text.MessageFormat;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

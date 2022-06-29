@@ -8,7 +8,7 @@ package cap14.recordsManager;
 public class PlayerNameTooShortException extends Exception {
 
 	/**
-	 * 
+	 * CONSTANTE : ID de la clase excepcion
 	 */
 	private static final long serialVersionUID = 1L;
 

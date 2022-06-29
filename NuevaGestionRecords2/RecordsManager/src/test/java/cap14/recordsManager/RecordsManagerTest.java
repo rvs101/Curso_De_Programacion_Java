@@ -1,9 +1,6 @@
 package cap14.recordsManager;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.junit.jupiter.api.Assertions.fail;
+import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
@@ -13,7 +10,7 @@ class RecordsManagerTest {
 	private static final String ALEJANDRO = "Alejandro";
 
 	@Test
-	void validateNameLargoTest() {
+	void testValidateLargoTest() {
 		try {
 			RecordsManager.validateName(ALEJANDRO);
 			assertTrue(true);
@@ -21,30 +18,30 @@ class RecordsManagerTest {
 			fail(e.getMessage());
 		}
 	}
-	
+
 	@Test
 	void validateNameCortoTest() {
 		try {
 			RecordsManager.validateName(ALEX);
-			fail("Debería haber fallado, " + ALEX + " es corto");
+			fail("Deberia haber fallado , " + ALEX + " es corto");
 		} catch (PlayerNameTooShortException e) {
 			assertTrue(true);
 			assertTrue(e.getMessage().contains(ALEX));
 		}
 	}
-	
+
 	@Test
 	void validateNameCasiTest() {
 		String nombre = "Alejo";
 		try {
 			RecordsManager.validateName(nombre);
-			fail("Debería haber fallado, " + nombre + " es corto");
+			fail("Deberia haber fallado, " + nombre + " es corto");
 		} catch (PlayerNameTooShortException e) {
 			assertTrue(true);
 			assertTrue(e.getMessage().contains(nombre));
 		}
 	}
-	
+
 	@Test
 	void validateNameExactoTest() {
 		String nombre = "Alejor";
@@ -70,7 +67,7 @@ class RecordsManagerTest {
 	void validateScore999Test() {
 		try {
 			RecordsManager.validateScore(ALEJANDRO, 999);
-			fail("Debería haber fallado, 999 son pocos puntos");
+			fail("Deberia haber fallado, 999 son pocos puntos");
 		} catch (ScoreTooLowException e) {
 			assertTrue(e.getMessage().contains(ALEJANDRO));
 			assertTrue(e.getMessage().contains("999"));
@@ -82,7 +79,7 @@ class RecordsManagerTest {
 		String nuevoNombre = RecordsManager.generateNewName(ALEJANDRO);
 		assertEquals(ALEJANDRO, nuevoNombre);
 	}
-
+ 
 	@Test
 	void generateNewNameCortoTest() {
 		String nuevoNombre = RecordsManager.generateNewName(ALEX);
@@ -101,4 +98,15 @@ class RecordsManagerTest {
 		assertTrue(Integer.valueOf(nuevoNombre) > 0);
 		assertEquals(6, nuevoNombre.length());
 	}
+
+//	@Test
+//	void testValidateScore() {
+//		fail("Not yet implemented");
+//	}
+//
+//	@Test
+//	void testGenerateNewName() {
+//		fail("Not yet implemented");
+//	}
+
 }
