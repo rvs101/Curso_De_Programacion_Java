@@ -4,6 +4,8 @@ package com.ejemplo.abstractas;
  * Clase Especial Abstracta
  * 
  * @author RVS
+ * 
+ * @date 3 jul 2022 23:03:56
  *
  */
 public class ClaseAbstractaEjemplo implements InterfazEjemplo {
