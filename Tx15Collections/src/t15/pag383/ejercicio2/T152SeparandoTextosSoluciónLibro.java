@@ -3,7 +3,7 @@ package t15.pag383.ejercicio2;
 import java.util.StringTokenizer;
 
 /**
- * Solución del libro
+ * Solución del libro - Ejercicio 15-02
  *
  * @author RVS
  *
@@ -12,19 +12,9 @@ import java.util.StringTokenizer;
  */
 public class T152SeparandoTextosSoluciónLibro {
 
-}
-
-class Ejercicio15_02 {
 	private static final String COMA = ",";
 	public static final String TEXTO = "Con diez cañones por banda, "
 			+ "viento en popa a toda vela, no corta el mar, sino vuela " + "un velero bergantín";
-
-	public static void main(String[] args) {
-		String[] res = separa(TEXTO);
-		for (String string : res) {
-			System.out.println(string);
-		}
-	}
 
 	private static String[] separa(String texto) {
 		StringTokenizer st = new StringTokenizer(texto, COMA);
@@ -35,4 +25,16 @@ class Ejercicio15_02 {
 		}
 		return res;
 	}
+
+	public static void main(String[] args) {
+		String[] res = separa(TEXTO);
+		for (String string : res) {
+			System.out.println(string);
+		}
+	}
+
+}
+
+class Ejercicio15_02 {
+
 }
