@@ -1,4 +1,4 @@
-package conceptos.super_ejemplo;
+package conceptos.super_ejemplo.constructores;
 
 public class ComplejoAmpliado extends Complejo {
 
