@@ -1,4 +1,4 @@
-package t15.pag383.ejercicio2;
+package t15.pag383.ejercicio2.separa.texto;
 
 import java.util.StringTokenizer;
 

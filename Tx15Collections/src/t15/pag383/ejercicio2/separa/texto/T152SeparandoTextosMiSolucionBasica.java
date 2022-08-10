@@ -1,4 +1,4 @@
-package t15.pag383.ejercicio2;
+package t15.pag383.ejercicio2.separa.texto;
 
 /**
  * Ejercicio :
@@ -14,10 +14,11 @@ package t15.pag383.ejercicio2;
  * @date 23 jul 2022 - 14:48:40 → 3 ago 2022 - 14:46:03
  *
  */
-public class T152SeparandoTextosTodoTiposSimbolosOrtograficos {
+public class T152SeparandoTextosMiSolucionBasica {
 
 	public static void main(String[] args) {
-		SepararTextoComasPunto.getShow();
+		SepararTexto.getShow();
+
 	}
 }
 
@@ -29,7 +30,7 @@ public class T152SeparandoTextosTodoTiposSimbolosOrtograficos {
  * @date 23 jul 2022 - 14:48:37
  *
  */
-class SepararTextoComasPunto {
+class SepararTexto {
 
 	/**
 	 * Elemento separador y a eliminar
@@ -39,8 +40,9 @@ class SepararTextoComasPunto {
 	/**
 	 * CONSTANTE de Clase : Contiene el mensaje
 	 */
-	private static final String TEXTO = "En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor. Una olla de algo más vaca que carnero, salpicón las más noches, duelos y quebrantos los sábados, lantejas los viernes, algún palomino de añadidura los domingos, consumían las tres partes de su hacienda. El resto della concluían sayo de velarte, calzas de velludo para las fiestas, con sus pantuflos de lo mesmo, y los días de entresemana se honraba con su vellorí de lo más fino. Tenía en su casa una ama que pasaba de los cuarenta, y una sobrina que no llegaba a los veinte, y un mozo de campo y plaza, que así ensillaba el rocín como tomaba la podadera. Frisaba la edad de nuestro hidalgo con los cincuenta años; era de complexión recia, seco de carnes, enjuto de rostro, gran madrugador y amigo de la caza. Quieren decir que tenía el sobrenombre de Quijada, o Quesada, que en esto hay alguna diferencia en los autores que deste caso escriben; aunque por conjeturas verosímiles se deja entender que se llamaba Quijana. Pero esto importa poco a nuestro cuento: basta que en la narración dél no se salga un punto de la verdad.";
-//	private static final String TEXTO = "Con diez cañones por banda, viento en popa a toda vela, no corta el mar, sino vuela un velero bergantín";
+	private static final String TEXTO = "Con diez cañones por banda, viento en popa a toda vela, no corta el mar, sino vuela un velero bergantín";
+
+//	private static final String TEXTO = "En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor. Una olla de algo más vaca que carnero, salpicón las más noches, duelos y quebrantos los sábados, lantejas los viernes, algún palomino de añadidura los domingos, consumían las tres partes de su hacienda. El resto della concluían sayo de velarte, calzas de velludo para las fiestas, con sus pantuflos de lo mesmo, y los días de entresemana se honraba con su vellorí de lo más fino. Tenía en su casa una ama que pasaba de los cuarenta, y una sobrina que no llegaba a los veinte, y un mozo de campo y plaza, que así ensillaba el rocín como tomaba la podadera. Frisaba la edad de nuestro hidalgo con los cincuenta años; era de complexión recia, seco de carnes, enjuto de rostro, gran madrugador y amigo de la caza. Quieren decir que tenía el sobrenombre de Quijada, o Quesada, que en esto hay alguna diferencia en los autores que deste caso escriben; aunque por conjeturas verosímiles se deja entender que se llamaba Quijana. Pero esto importa poco a nuestro cuento: basta que en la narración dél no se salga un punto de la verdad.";
 
 	/**
 	 * Atributo de Clase sin instanciar
@@ -138,14 +140,12 @@ class SepararTextoComasPunto {
 	public static char[] getQuitarComasEspacios() {
 		int comas = 0;
 		caracteres = convertirStringEnCaracteres(); // 103
-		caracteresAux = new char[caracteres.length]; // 97
+		caracteresAux = new char[caracteres.length]; // 103 - (3 simbolos de la coma + 2 espacios por cada coma) = 97
 
 		for (int i = 0; i < (caracteres.length - (getCuantasComas())); i++) { // 97 Vueltas
-			if ((caracteres[i] != ',') && (caracteres[i] != '.') && (caracteres[i] != ';') && (caracteres[i] != ':')) { // Si Hay Coma → 26
-																								// caracteres
+			if (caracteres[i] != ',') { // Si Hay Coma → 26 caracteres
 				caracteresAux[i] = caracteres[i];
-			} else if (((caracteres[i] == ',') || (caracteres[i] == '.') || (caracteres[i] == ';') || (caracteres[i] == ':'))
-					&& (caracteres[i + 1] == ' ')) {
+			} else if ((caracteres[i] == ',') && (caracteres[i + 1] == ' ')) {
 				comas++;
 				for (int j = 0; j < (caracteres.length - (comas)); j++) {
 					if (comas <= getCuantasComas()) {
