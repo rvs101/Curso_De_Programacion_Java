@@ -1,4 +1,4 @@
-package t15.pag383.ejercicio1;
+package t15.pag383.ejercicio1.cuenta.comas;
 
 /**
  * Cuenta el numero de comas en el texto
