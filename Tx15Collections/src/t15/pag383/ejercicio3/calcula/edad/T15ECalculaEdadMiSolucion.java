@@ -10,7 +10,10 @@ import java.util.GregorianCalendar;
 import java.util.Scanner;
 
 /**
+ * Calcula tu edad exacta a dia de hoy
  * 
+ * Programa que al introducir tu fecha de nacimiento y te dice cuantos años ,
+ * meses y días han pasado hasta la fecha actual
  *
  * @author RVS
  *

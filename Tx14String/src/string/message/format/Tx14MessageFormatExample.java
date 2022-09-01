@@ -38,7 +38,7 @@ public class Tx14MessageFormatExample {
 	 * @return String Acronimo del país que queremos traducir el texto
 	 */
 	public static String getMessage1() {
-		System.out.println("Introduce las 1º siglas del idioma del pais");
+		System.out.println("Introduce las 1º siglas del idioma del pais en minuscula");
 		Scanner sc = null;
 		try {
 			sc = new Scanner(System.in);
@@ -55,7 +55,7 @@ public class Tx14MessageFormatExample {
 	 * @return String Acronimo del país que queremos traducir el texto
 	 */
 	public static String getMessage2() {
-		System.out.println("Introduce las 2º siglas del idioma del pais");
+		System.out.println("Introduce las 2º siglas del idioma del pais en mayuscula");
 		Scanner sc = null;
 		try {
 			sc = new Scanner(System.in);
