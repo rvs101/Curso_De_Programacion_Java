@@ -30,8 +30,8 @@ public class T15EstadisticasChinasSol {
 
 	public static void main(String[] args) {
 //		Locale.setDefault(Locale.CHINA);
-		Locale.setDefault(Locale.TAIWAN);
-//		Locale.setDefault(Locale.UK);
+//		Locale.setDefault(Locale.TAIWAN);
+		Locale.setDefault(Locale.UK);
 
 		List<String> lista = generaLista();
 		Map<Character, Integer> mapa = cuentaLetras(lista);

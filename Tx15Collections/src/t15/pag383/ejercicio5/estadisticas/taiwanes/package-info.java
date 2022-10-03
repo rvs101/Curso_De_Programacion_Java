@@ -1,1 +1,0 @@
-package t15.pag383.ejercicio5.estadisticas.taiwanes;

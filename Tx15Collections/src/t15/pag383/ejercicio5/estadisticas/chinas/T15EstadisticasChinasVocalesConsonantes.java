@@ -1,5 +1,7 @@
 package t15.pag383.ejercicio5.estadisticas.chinas;
 
+import t15.pag383.ejercicio5.estadisticas.principal.T15EstadisticasGenerarNumeros;
+
 /**
  * Internacionaliza el programa del ejercicio 15.4 de forma que funcione por
  * defecto en ingles
@@ -10,54 +12,21 @@ package t15.pag383.ejercicio5.estadisticas.chinas;
  *
  * @date 31 ago 2022 - 20:27:01
  */
-public class T15EstadisticasVocalesConsonantesChinas {
-
-}
-
-/**
- * 
- *
- * @author RVS
- *
- * @date 1 sept 2022 - 18:51:51
- *
- */
-class VocalesChinas {
+public class T15EstadisticasChinasVocalesConsonantes {
 
 	/**
 	 * Vocales Chinas
 	 */
 	public final static char[] VOCAL = { '阿', '俄', '伊', '哦', '吴' };
 
-}
-
-/**
- * 
- *
- * @author RVS
- *
- * @date 1 sept 2022 - 18:51:48
- *
- */
-class ConsonantesChinas {
 
 	/**
 	 * Consonantes con caracteres chinos
 	 */
 	public final static String[] CONSONANTE = { "贝", "色", "德", "俄非", "黑", "阿车", "厚塔", "卡", "艾勒", "艾么", "艾呢", "艾涅", "佩",
 			"苦", "艾和", "艾色", "特", "吴维", "吴维豆布勒", "艾吉尺", "伊列哈", "舍塔" };
-}
 
-/**
- * 
- *
- * @author RVS
- *
- * @date 1 sept 2022 - 18:51:44
- *
- */
-class SilabasChinas {
-
+	
 	/**
 	 * 
 	 */
@@ -67,7 +36,7 @@ class SilabasChinas {
 	 * 
 	 * @return
 	 */
-	public static String[] getSilabasChinas() {
+	public static String[] getSilabasChinasCompletas() {
 		return silabas;
 	}
 
@@ -77,19 +46,18 @@ class SilabasChinas {
 	 * @return - String[] - Array de String de silabas
 	 */
 	public static String[] getSilabasCompletasChinas() {
-
-		for (int i = 0; i < getSilabasChinas().length; i++) {
-			for (int j = 0; j < getSilabasChinas().length; j++) {
-				if ((GenerarNumeros.getNumeroNumero() % 2) == 0) {
-					SilabasChinas.getSilabasChinas()[j] = String
-							.valueOf(VocalesChinas.VOCAL[GenerarNumeros.getNumeroVocales()]);
+		for (int i = 0; i < getSilabasChinasCompletas().length; i++) {
+			for (int j = 0; j < getSilabasChinasCompletas().length; j++) {
+				if ((T15EstadisticasGenerarNumeros.getNumeroNumero() % 2) == 0) {
+					T15EstadisticasChinasVocalesConsonantes.getSilabasChinasCompletas()[j] = String
+							.valueOf(T15EstadisticasChinasVocalesConsonantes.VOCAL[T15EstadisticasGenerarNumeros.getNumeroVocales()]);
 				} else {
-					SilabasChinas.getSilabasChinas()[j] = String
-							.valueOf(ConsonantesChinas.CONSONANTE[GenerarNumeros.getNumeroY()]);
+					T15EstadisticasChinasVocalesConsonantes.getSilabasChinasCompletas()[j] = String
+							.valueOf(T15EstadisticasChinasVocalesConsonantes.CONSONANTE[T15EstadisticasGenerarNumeros.getNumeroY()]);
 				}
 			}
 		}
-		return getSilabasChinas();
+		return getSilabasChinasCompletas();
 	}
 
 	/**
@@ -99,7 +67,7 @@ class SilabasChinas {
 	 */
 	public static void showSilabasChinas() {
 		int x = 1;
-		for (String valor : SilabasChinas.getSilabasCompletasChinas()) {
+		for (String valor : T15EstadisticasChinasVocalesConsonantes.getSilabasCompletasChinas()) {
 			if ((x %= 50) == 0) {
 				System.out.println();
 			} else {
