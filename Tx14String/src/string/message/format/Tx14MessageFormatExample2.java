@@ -26,6 +26,7 @@ public class Tx14MessageFormatExample2 {
 //		Leer el fichero de propiedades
 		Locale.setDefault(new Locale("en", "US"));
 		System.out.println("• Current Locale: " + Locale.getDefault());
+//		Nombre del archivo con la traducción
 		ResourceBundle bundle = ResourceBundle.getBundle("structures");
 //		Obtengo los objetos los mensajes
 		String message = bundle.getString("mensaje");
@@ -44,6 +45,7 @@ public class Tx14MessageFormatExample2 {
 //		Leer el fichero de propiedades
 		Locale.setDefault(new Locale.Builder().setLanguage("de").setRegion("DE").build());
 		System.out.println("• Current Locale: " + Locale.getDefault());
+//		Nombre del archivo con la traducción
 		ResourceBundle bundle = ResourceBundle.getBundle("structures");
 //		Obtengo los objetos los mensajes
 		String message = bundle.getString("message");
@@ -62,6 +64,7 @@ public class Tx14MessageFormatExample2 {
 		ResourceBundle bundle = ResourceBundle.getBundle("estructuras", new Locale("es", "ES"));
 //		Cambio al español
 		Locale.setDefault(new Locale("es", "ES"));
+//		Nombre del archivo con la traducción
 		System.out.println("• Current Locale: " + Locale.getDefault());
 		String message = bundle.getString("message");
 		String object = bundle.getString("object");
@@ -78,9 +81,12 @@ public class Tx14MessageFormatExample2 {
 //		Leer el fichero de propiedades
 		Locale.setDefault(new Locale("cn", "CHN"));
 		System.out.println("• Current Locale: " + Locale.getDefault());
+//		Nombre del archivo con la traducción
 		ResourceBundle bundle = ResourceBundle.getBundle("structures");
 //		Obtengo los objetos los mensajes
+//		MENSAJE PRINCIPAL
 		String message = bundle.getString("message");
+//		PALABRAS TRADUCIDAS E INDEXADAS
 		String object = bundle.getString("object");
 		String colour = bundle.getString("colour");
 //		Muestro los mensajes
