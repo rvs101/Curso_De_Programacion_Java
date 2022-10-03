@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
+import t15.pag383.ejercicio5.estadisticas.principal.T15EstadisticasMensajes;
+
 /**
  * Internacionaliza el programa del ejercicio 15.4 de forma que funcione por
  * defecto en ingles
@@ -15,18 +17,7 @@ import java.util.ResourceBundle;
  *
  * @date 31 ago 2022 - 20:27:01
  */
-public class T15EstadisticasLatinasLetras {
-
-}
-
-/**
- *
- * @author RVS
- *
- * @date 1 sept 2022 - 18:56:21
- *
- */
-class LetrasLatinas {
+public class T15EstadisticasLetrasLatinas {
 
 	public static ArrayList<String> almacenarLetras;
 
@@ -70,88 +61,88 @@ class LetrasLatinas {
 	 * 
 	 * @param letras - Array de String con las palabras de 2 silabas
 	 */
-	public static void setVocalConsonantes(String[] letras) {
+	public static void setVocalConsonantesLatin(String[] letras) {
 		for (int i = 0; i < letras.length; i++) {
 			if (letras[i].charAt(0) == 'a') {
-				LetrasLatinas.a++;
+				T15EstadisticasLetrasLatinas.a++;
 			}
 			if (letras[i].charAt(0) == 'b') {
-				LetrasLatinas.b++;
+				T15EstadisticasLetrasLatinas.b++;
 			}
 			if (letras[i].charAt(0) == 'c') {
-				LetrasLatinas.c++;
+				T15EstadisticasLetrasLatinas.c++;
 			}
 			if (letras[i].charAt(0) == 'd') {
-				LetrasLatinas.d++;
+				T15EstadisticasLetrasLatinas.d++;
 			}
 			if (letras[i].charAt(0) == 'e') {
-				LetrasLatinas.e++;
+				T15EstadisticasLetrasLatinas.e++;
 			}
 			if (letras[i].charAt(0) == 'f') {
-				LetrasLatinas.f++;
+				T15EstadisticasLetrasLatinas.f++;
 			}
 			if (letras[i].charAt(0) == 'g') {
-				LetrasLatinas.g++;
+				T15EstadisticasLetrasLatinas.g++;
 			}
 			if (letras[i].charAt(0) == 'h') {
-				LetrasLatinas.h++;
+				T15EstadisticasLetrasLatinas.h++;
 			}
 			if (letras[i].charAt(0) == 'i') {
-				LetrasLatinas.i++;
+				T15EstadisticasLetrasLatinas.i++;
 			}
 			if (letras[i].charAt(0) == 'j') {
-				LetrasLatinas.j++;
+				T15EstadisticasLetrasLatinas.j++;
 			}
 			if (letras[i].charAt(0) == 'k') {
-				LetrasLatinas.k++;
+				T15EstadisticasLetrasLatinas.k++;
 			}
 			if (letras[i].charAt(0) == 'l') {
-				LetrasLatinas.l++;
+				T15EstadisticasLetrasLatinas.l++;
 			}
 			if (letras[i].charAt(0) == 'm') {
-				LetrasLatinas.m++;
+				T15EstadisticasLetrasLatinas.m++;
 			}
 			if (letras[i].charAt(0) == 'n') {
-				LetrasLatinas.n++;
+				T15EstadisticasLetrasLatinas.n++;
 			}
 			if (letras[i].charAt(0) == 'ñ') {
-				LetrasLatinas.ñ++;
+				T15EstadisticasLetrasLatinas.ñ++;
 			}
 			if (letras[i].charAt(0) == 'o') {
-				LetrasLatinas.o++;
+				T15EstadisticasLetrasLatinas.o++;
 			}
 			if (letras[i].charAt(0) == 'p') {
-				LetrasLatinas.p++;
+				T15EstadisticasLetrasLatinas.p++;
 			}
 			if (letras[i].charAt(0) == 'q') {
-				LetrasLatinas.q++;
+				T15EstadisticasLetrasLatinas.q++;
 			}
 			if (letras[i].charAt(0) == 'r') {
-				LetrasLatinas.r++;
+				T15EstadisticasLetrasLatinas.r++;
 			}
 			if (letras[i].charAt(0) == 's') {
-				LetrasLatinas.s++;
+				T15EstadisticasLetrasLatinas.s++;
 			}
 			if (letras[i].charAt(0) == 't') {
-				LetrasLatinas.t++;
+				T15EstadisticasLetrasLatinas.t++;
 			}
 			if (letras[i].charAt(0) == 'u') {
-				LetrasLatinas.u++;
+				T15EstadisticasLetrasLatinas.u++;
 			}
 			if (letras[i].charAt(0) == 'v') {
-				LetrasLatinas.v++;
+				T15EstadisticasLetrasLatinas.v++;
 			}
 			if (letras[i].charAt(0) == 'w') {
-				LetrasLatinas.w++;
+				T15EstadisticasLetrasLatinas.w++;
 			}
 			if (letras[i].charAt(0) == 'x') {
-				LetrasLatinas.x++;
+				T15EstadisticasLetrasLatinas.x++;
 			}
 			if (letras[i].charAt(0) == 'y') {
-				LetrasLatinas.y++;
+				T15EstadisticasLetrasLatinas.y++;
 			}
 			if (letras[i].charAt(0) == 'z') {
-				LetrasLatinas.z++;
+				T15EstadisticasLetrasLatinas.z++;
 			}
 		}
 	}
@@ -161,86 +152,86 @@ class LetrasLatinas {
 	 */
 	public static void setLetrasConsonantes() {
 		almacenarLetras = new ArrayList<>();
-		if (LetrasLatinas.a > 0) {
-			almacenarLetras.add("a : " + LetrasLatinas.a);
+		if (T15EstadisticasLetrasLatinas.a > 0) {
+			almacenarLetras.add("a : " + T15EstadisticasLetrasLatinas.a);
 		}
-		if (LetrasLatinas.b > 0) {
-			almacenarLetras.add("b : " + LetrasLatinas.b);
+		if (T15EstadisticasLetrasLatinas.b > 0) {
+			almacenarLetras.add("b : " + T15EstadisticasLetrasLatinas.b);
 		}
-		if (LetrasLatinas.c > 0) {
-			almacenarLetras.add("c : " + LetrasLatinas.c);
+		if (T15EstadisticasLetrasLatinas.c > 0) {
+			almacenarLetras.add("c : " + T15EstadisticasLetrasLatinas.c);
 		}
-		if (LetrasLatinas.d > 0) {
-			almacenarLetras.add("d : " + LetrasLatinas.d);
+		if (T15EstadisticasLetrasLatinas.d > 0) {
+			almacenarLetras.add("d : " + T15EstadisticasLetrasLatinas.d);
 		}
-		if (LetrasLatinas.e > 0) {
-			almacenarLetras.add("e : " + LetrasLatinas.e);
+		if (T15EstadisticasLetrasLatinas.e > 0) {
+			almacenarLetras.add("e : " + T15EstadisticasLetrasLatinas.e);
 		}
-		if (LetrasLatinas.f > 0) {
-			almacenarLetras.add("f : " + LetrasLatinas.f);
+		if (T15EstadisticasLetrasLatinas.f > 0) {
+			almacenarLetras.add("f : " + T15EstadisticasLetrasLatinas.f);
 		}
-		if (LetrasLatinas.g > 0) {
-			almacenarLetras.add("g : " + LetrasLatinas.g);
+		if (T15EstadisticasLetrasLatinas.g > 0) {
+			almacenarLetras.add("g : " + T15EstadisticasLetrasLatinas.g);
 		}
-		if (LetrasLatinas.h > 0) {
-			almacenarLetras.add("h : " + LetrasLatinas.h);
+		if (T15EstadisticasLetrasLatinas.h > 0) {
+			almacenarLetras.add("h : " + T15EstadisticasLetrasLatinas.h);
 		}
-		if (LetrasLatinas.i > 0) {
-			almacenarLetras.add("i : " + LetrasLatinas.i);
+		if (T15EstadisticasLetrasLatinas.i > 0) {
+			almacenarLetras.add("i : " + T15EstadisticasLetrasLatinas.i);
 		}
-		if (LetrasLatinas.j > 0) {
-			almacenarLetras.add("j : " + LetrasLatinas.j);
+		if (T15EstadisticasLetrasLatinas.j > 0) {
+			almacenarLetras.add("j : " + T15EstadisticasLetrasLatinas.j);
 		}
-		if (LetrasLatinas.k > 0) {
-			almacenarLetras.add("k : " + LetrasLatinas.k);
+		if (T15EstadisticasLetrasLatinas.k > 0) {
+			almacenarLetras.add("k : " + T15EstadisticasLetrasLatinas.k);
 		}
-		if (LetrasLatinas.l > 0) {
-			almacenarLetras.add("l : " + LetrasLatinas.l);
+		if (T15EstadisticasLetrasLatinas.l > 0) {
+			almacenarLetras.add("l : " + T15EstadisticasLetrasLatinas.l);
 		}
-		if (LetrasLatinas.m > 0) {
-			almacenarLetras.add("m : " + LetrasLatinas.m);
+		if (T15EstadisticasLetrasLatinas.m > 0) {
+			almacenarLetras.add("m : " + T15EstadisticasLetrasLatinas.m);
 		}
-		if (LetrasLatinas.n > 0) {
-			almacenarLetras.add("n : " + LetrasLatinas.n);
+		if (T15EstadisticasLetrasLatinas.n > 0) {
+			almacenarLetras.add("n : " + T15EstadisticasLetrasLatinas.n);
 		}
-		if (LetrasLatinas.ñ > 0) {
-			almacenarLetras.add("ñ : " + LetrasLatinas.ñ);
+		if (T15EstadisticasLetrasLatinas.ñ > 0) {
+			almacenarLetras.add("ñ : " + T15EstadisticasLetrasLatinas.ñ);
 		}
-		if (LetrasLatinas.o > 0) {
-			almacenarLetras.add("o : " + LetrasLatinas.o);
+		if (T15EstadisticasLetrasLatinas.o > 0) {
+			almacenarLetras.add("o : " + T15EstadisticasLetrasLatinas.o);
 		}
-		if (LetrasLatinas.p > 0) {
-			almacenarLetras.add("p : " + LetrasLatinas.p);
+		if (T15EstadisticasLetrasLatinas.p > 0) {
+			almacenarLetras.add("p : " + T15EstadisticasLetrasLatinas.p);
 		}
-		if (LetrasLatinas.q > 0) {
-			almacenarLetras.add("q : " + LetrasLatinas.q);
+		if (T15EstadisticasLetrasLatinas.q > 0) {
+			almacenarLetras.add("q : " + T15EstadisticasLetrasLatinas.q);
 		}
-		if (LetrasLatinas.r > 0) {
-			almacenarLetras.add("r : " + LetrasLatinas.r);
+		if (T15EstadisticasLetrasLatinas.r > 0) {
+			almacenarLetras.add("r : " + T15EstadisticasLetrasLatinas.r);
 		}
-		if (LetrasLatinas.s > 0) {
-			almacenarLetras.add("s : " + LetrasLatinas.s);
+		if (T15EstadisticasLetrasLatinas.s > 0) {
+			almacenarLetras.add("s : " + T15EstadisticasLetrasLatinas.s);
 		}
-		if (LetrasLatinas.t > 0) {
-			almacenarLetras.add("t : " + LetrasLatinas.t);
+		if (T15EstadisticasLetrasLatinas.t > 0) {
+			almacenarLetras.add("t : " + T15EstadisticasLetrasLatinas.t);
 		}
-		if (LetrasLatinas.u > 0) {
-			almacenarLetras.add("u : " + LetrasLatinas.u);
+		if (T15EstadisticasLetrasLatinas.u > 0) {
+			almacenarLetras.add("u : " + T15EstadisticasLetrasLatinas.u);
 		}
-		if (LetrasLatinas.v > 0) {
-			almacenarLetras.add("v : " + LetrasLatinas.v);
+		if (T15EstadisticasLetrasLatinas.v > 0) {
+			almacenarLetras.add("v : " + T15EstadisticasLetrasLatinas.v);
 		}
-		if (LetrasLatinas.w > 0) {
-			almacenarLetras.add("w : " + LetrasLatinas.w);
+		if (T15EstadisticasLetrasLatinas.w > 0) {
+			almacenarLetras.add("w : " + T15EstadisticasLetrasLatinas.w);
 		}
-		if (LetrasLatinas.x > 0) {
-			almacenarLetras.add("x : " + LetrasLatinas.x);
+		if (T15EstadisticasLetrasLatinas.x > 0) {
+			almacenarLetras.add("x : " + T15EstadisticasLetrasLatinas.x);
 		}
-		if (LetrasLatinas.y > 0) {
-			almacenarLetras.add("y : " + LetrasLatinas.y);
+		if (T15EstadisticasLetrasLatinas.y > 0) {
+			almacenarLetras.add("y : " + T15EstadisticasLetrasLatinas.y);
 		}
-		if (LetrasLatinas.z > 0) {
-			almacenarLetras.add("z : " + LetrasLatinas.z);
+		if (T15EstadisticasLetrasLatinas.z > 0) {
+			almacenarLetras.add("z : " + T15EstadisticasLetrasLatinas.z);
 		}
 	}
 
@@ -268,7 +259,7 @@ class LetrasLatinas {
 // Añade todas las palabras 
 		String acumulador = "";
 		for (int i = 0; i < almacenarLetras.size(); i++) {
-			SilabasLatinas.getSilabas();
+			T15EstadisticasLatinasVocalesConsonantes.getSilabasLatinas();
 			acumulador = (MessageFormat.format(mensaje, almacenarLetras.get(i)));
 			sb.append(acumulador);
 		}
@@ -287,7 +278,15 @@ class LetrasLatinas {
 	 * 
 	 */
 	public static void showLetrasLatinas() {
-		setVocalConsonantes(SilabasLatinas.getSilabas());
-		setFormatLatino();
+		setVocalConsonantesLatin(T15EstadisticasLatinasVocalesConsonantes.getSilabasLatinas());
+		T15EstadisticasLetrasLatinas.setFormatLatino();
+	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public static String[] getPalabrasLatinas() {
+		return T15EstadisticasLatinasVocalesConsonantes.getSilabasLatinasCompletas();
 	}
 }

@@ -12,15 +12,6 @@ package t15.pag383.ejercicio5.estadisticas.principal;
  */
 public class T15EstadisticasGenerarNumeros {
 
-}	
-
-/**
- * 
- * @author Roboto
- * @date 21 sept 2022 21:05:48
- */
-class GenerarNumeros {
-
 	/**
 	 * Función de clase
 	 * 

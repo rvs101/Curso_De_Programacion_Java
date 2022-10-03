@@ -17,18 +17,7 @@ import java.util.ResourceBundle;
  */
 public class T15EstadisticasLetrasChinas {
 
-}
-
-/**
- *
- * @author RVS
- *
- * @date 1 sept 2022 - 18:56:21
- *
- */
-class LetrasChinas {
-
-	public static ArrayList<String> almacenarLetrasChinas;
+	public static ArrayList<String> almacenarLetras;
 
 //  Atributos de Clase - Vocales
 	public static int a = 0;
@@ -71,88 +60,87 @@ class LetrasChinas {
 	 * @param letras - Array de String
 	 */
 	public static void setVocalConsonantesChinas(String[] letras) {
-
 		for (int i = 0; i < letras.length; i++) {
 			if (letras[i].equals("阿")) {
-				LetrasChinas.a++;
+				T15EstadisticasLetrasChinas.a++;
 			}
 			if (letras[i].equals("饿")) {
-				LetrasChinas.e++;
+				T15EstadisticasLetrasChinas.e++;
 			}
 			if (letras[i].equals("伊")) {
-				LetrasChinas.i++;
+				T15EstadisticasLetrasChinas.i++;
 			}
 			if (letras[i].equals("吴")) {
-				LetrasChinas.o++;
+				T15EstadisticasLetrasChinas.o++;
 			}
 			if (letras[i].equals("哦")) {
-				LetrasChinas.u++;
+				T15EstadisticasLetrasChinas.u++;
 			}
 			if (letras[i].equals("贝")) {
-				LetrasChinas.b++;
+				T15EstadisticasLetrasChinas.b++;
 			}
 			if (letras[i].equals("色")) {
-				LetrasChinas.c++;
+				T15EstadisticasLetrasChinas.c++;
 			}
 			if (letras[i].equals("德")) {
-				LetrasChinas.d++;
+				T15EstadisticasLetrasChinas.d++;
 			}
 			if (letras[i].equals("艾弗")) {
-				LetrasChinas.f++;
+				T15EstadisticasLetrasChinas.f++;
 			}
 			if (letras[i].equals("日")) {
-				LetrasChinas.g++;
+				T15EstadisticasLetrasChinas.g++;
 			}
 			if (letras[i].equals("阿什")) {
-				LetrasChinas.h++;
+				T15EstadisticasLetrasChinas.h++;
 			}
 			if (letras[i].equals("鸡")) {
-				LetrasChinas.j++;
+				T15EstadisticasLetrasChinas.j++;
 			}
 			if (letras[i].equals("卡")) {
-				LetrasChinas.k++;
+				T15EstadisticasLetrasChinas.k++;
 			}
 			if (letras[i].equals("艾勒")) {
-				LetrasChinas.l++;
+				T15EstadisticasLetrasChinas.l++;
 			}
 			if (letras[i].equals("艾马")) {
-				LetrasChinas.m++;
+				T15EstadisticasLetrasChinas.m++;
 			}
 			if (letras[i].equals("艾娜")) {
-				LetrasChinas.n++;
+				T15EstadisticasLetrasChinas.n++;
 			}
 			if (letras[i].equals("艾涅")) {
-				LetrasChinas.ñ++;
+				T15EstadisticasLetrasChinas.ñ++;
 			}
 			if (letras[i].equals("佩")) {
-				LetrasChinas.p++;
+				T15EstadisticasLetrasChinas.p++;
 			}
 			if (letras[i].equals("苦")) {
-				LetrasChinas.q++;
+				T15EstadisticasLetrasChinas.q++;
 			}
 			if (letras[i].equals("艾和")) {
-				LetrasChinas.r++;
+				T15EstadisticasLetrasChinas.r++;
 			}
 			if (letras[i].equals("艾丝")) {
-				LetrasChinas.s++;
+				T15EstadisticasLetrasChinas.s++;
 			}
 			if (letras[i].equals("特")) {
-				LetrasChinas.t++;
+				T15EstadisticasLetrasChinas.t++;
 			}
 			if (letras[i].equals("维")) {
-				LetrasChinas.v++;
+				T15EstadisticasLetrasChinas.v++;
 			}
 			if (letras[i].equals("独布勒维")) {
-				LetrasChinas.w++;
+				T15EstadisticasLetrasChinas.w++;
 			}
 			if (letras[i].equals("伊克斯")) {
-				LetrasChinas.x++;
+				T15EstadisticasLetrasChinas.x++;
 			}
 			if (letras[i].equals("伊格黑克")) {
-				LetrasChinas.y++;
+				T15EstadisticasLetrasChinas.y++;
 			}
 			if (letras[i].equals("贼德")) {
-				LetrasChinas.z++;
+				T15EstadisticasLetrasChinas.z++;
 			}
 		}
 	}
@@ -161,94 +149,94 @@ class LetrasChinas {
 	 * 
 	 */
 	public static void setLetrasVocalesConsonantesChinas() {
-		almacenarLetrasChinas = new ArrayList<>();
-		if (LetrasLatinas.a > 0) {
-			almacenarLetrasChinas.add("阿 : " + LetrasLatinas.a);
+		almacenarLetras = new ArrayList<>();
+		if (T15EstadisticasLetrasChinas.a > 0) {
+			almacenarLetras.add("阿 : " + T15EstadisticasLetrasChinas.a + " a ");
 		}
-		if (LetrasLatinas.b > 0) {
-			almacenarLetrasChinas.add("贝 : " + LetrasLatinas.b);
+		if (T15EstadisticasLetrasChinas.b > 0) {
+			almacenarLetras.add("贝 : " + T15EstadisticasLetrasChinas.b + " b ");
 		}
-		if (LetrasLatinas.c > 0) {
-			almacenarLetrasChinas.add("色 : " + LetrasLatinas.c);
+		if (T15EstadisticasLetrasChinas.c > 0) {
+			almacenarLetras.add("色 : " + T15EstadisticasLetrasChinas.c + " c ");
 		}
-		if (LetrasLatinas.d > 0) {
-			almacenarLetrasChinas.add("德 : " + LetrasLatinas.d);
+		if (T15EstadisticasLetrasChinas.d > 0) {
+			almacenarLetras.add("德 : " + T15EstadisticasLetrasChinas.d + " d ");
 		}
-		if (LetrasLatinas.e > 0) {
-			almacenarLetrasChinas.add("俄 : " + LetrasLatinas.e);
+		if (T15EstadisticasLetrasChinas.e > 0) {
+			almacenarLetras.add("俄 : " + T15EstadisticasLetrasChinas.e + " e ");
 		}
-		if (LetrasLatinas.f > 0) {
-			almacenarLetrasChinas.add("俄非 : " + LetrasLatinas.f);
+		if (T15EstadisticasLetrasChinas.f > 0) {
+			almacenarLetras.add("俄非 : " + T15EstadisticasLetrasChinas.f + " f ");
 		}
-		if (LetrasLatinas.g > 0) {
-			almacenarLetrasChinas.add("黑 : " + LetrasLatinas.g);
+		if (T15EstadisticasLetrasChinas.g > 0) {
+			almacenarLetras.add("黑 : " + T15EstadisticasLetrasChinas.g + " g ");
 		}
-		if (LetrasLatinas.h > 0) {
-			almacenarLetrasChinas.add("阿车 : " + LetrasLatinas.h);
+		if (T15EstadisticasLetrasChinas.h > 0) {
+			almacenarLetras.add("阿车 : " + T15EstadisticasLetrasChinas.h + " h ");
 		}
-		if (LetrasLatinas.i > 0) {
-			almacenarLetrasChinas.add("伊 : " + LetrasLatinas.i);
+		if (T15EstadisticasLetrasChinas.i > 0) {
+			almacenarLetras.add("伊 : " + T15EstadisticasLetrasChinas.i + " i ");
 		}
-		if (LetrasLatinas.j > 0) {
-			almacenarLetrasChinas.add("厚塔 : " + LetrasLatinas.j);
+		if (T15EstadisticasLetrasChinas.j > 0) {
+			almacenarLetras.add("厚塔 : " + T15EstadisticasLetrasChinas.j + " j ");
 		}
-		if (LetrasLatinas.k > 0) {
-			almacenarLetrasChinas.add("卡 : " + LetrasLatinas.k);
+		if (T15EstadisticasLetrasChinas.k > 0) {
+			almacenarLetras.add("卡 : " + T15EstadisticasLetrasChinas.k + " k ");
 		}
-		if (LetrasLatinas.l > 0) {
-			almacenarLetrasChinas.add("艾勒 : " + LetrasLatinas.l);
+		if (T15EstadisticasLetrasChinas.l > 0) {
+			almacenarLetras.add("艾勒 : " + T15EstadisticasLetrasChinas.l + " l ");
 		}
-		if (LetrasLatinas.m > 0) {
-			almacenarLetrasChinas.add("艾么 : " + LetrasLatinas.m);
+		if (T15EstadisticasLetrasChinas.m > 0) {
+			almacenarLetras.add("艾么 : " + T15EstadisticasLetrasChinas.m + " m ");
 		}
-		if (LetrasLatinas.n > 0) {
-			almacenarLetrasChinas.add("艾呢 : " + LetrasLatinas.n);
+		if (T15EstadisticasLetrasChinas.n > 0) {
+			almacenarLetras.add("艾呢 : " + T15EstadisticasLetrasChinas.n + " n ");
 		}
-		if (LetrasLatinas.ñ > 0) {
-			almacenarLetrasChinas.add("艾涅 : " + LetrasLatinas.ñ);
+		if (T15EstadisticasLetrasChinas.ñ > 0) {
+			almacenarLetras.add("艾涅 : " + T15EstadisticasLetrasChinas.ñ + " ñ ");
 		}
-		if (LetrasLatinas.o > 0) {
-			almacenarLetrasChinas.add("哦 : " + LetrasLatinas.o);
+		if (T15EstadisticasLetrasChinas.o > 0) {
+			almacenarLetras.add("哦 : " + T15EstadisticasLetrasChinas.o + " o ");
 		}
-		if (LetrasLatinas.p > 0) {
-			almacenarLetrasChinas.add("佩 : " + LetrasLatinas.p);
+		if (T15EstadisticasLetrasChinas.p > 0) {
+			almacenarLetras.add("佩 : " + T15EstadisticasLetrasChinas.p + " p ");
 		}
-		if (LetrasLatinas.q > 0) {
-			almacenarLetrasChinas.add("苦 : " + LetrasLatinas.q);
+		if (T15EstadisticasLetrasChinas.q > 0) {
+			almacenarLetras.add("苦 : " + T15EstadisticasLetrasChinas.q + " q ");
 		}
-		if (LetrasLatinas.r > 0) {
-			almacenarLetrasChinas.add("艾和 : " + LetrasLatinas.r);
+		if (T15EstadisticasLetrasChinas.r > 0) {
+			almacenarLetras.add("艾和 : " + T15EstadisticasLetrasChinas.r + " r ");
 		}
-		if (LetrasLatinas.s > 0) {
-			almacenarLetrasChinas.add("艾色 : " + LetrasLatinas.s);
+		if (T15EstadisticasLetrasChinas.s > 0) {
+			almacenarLetras.add("艾色 : " + T15EstadisticasLetrasChinas.s + " s ");
 		}
-		if (LetrasLatinas.t > 0) {
-			almacenarLetrasChinas.add("特 : " + LetrasLatinas.t);
+		if (T15EstadisticasLetrasChinas.t > 0) {
+			almacenarLetras.add("特 : " + T15EstadisticasLetrasChinas.t + " t ");
 		}
-		if (LetrasLatinas.u > 0) {
-			almacenarLetrasChinas.add("吴 : " + LetrasLatinas.u);
+		if (T15EstadisticasLetrasChinas.u > 0) {
+			almacenarLetras.add("吴 : " + T15EstadisticasLetrasChinas.u + " u ");
 		}
-		if (LetrasLatinas.v > 0) {
-			almacenarLetrasChinas.add("吴维 : " + LetrasLatinas.v);
+		if (T15EstadisticasLetrasChinas.v > 0) {
+			almacenarLetras.add("吴维 : " + T15EstadisticasLetrasChinas.v + " v ");
 		}
-		if (LetrasLatinas.w > 0) {
-			almacenarLetrasChinas.add("吴维豆布勒 : " + LetrasLatinas.w);
+		if (T15EstadisticasLetrasChinas.w > 0) {
+			almacenarLetras.add("吴维豆布勒 : " + T15EstadisticasLetrasChinas.w + " w ");
 		}
-		if (LetrasLatinas.x > 0) {
-			almacenarLetrasChinas.add("艾吉尺 : " + LetrasLatinas.x);
+		if (T15EstadisticasLetrasChinas.x > 0) {
+			almacenarLetras.add("艾吉尺 : " + T15EstadisticasLetrasChinas.x + " x ");
 		}
-		if (LetrasLatinas.y > 0) {
-			almacenarLetrasChinas.add("伊列哈 : " + LetrasLatinas.y);
+		if (T15EstadisticasLetrasChinas.y > 0) {
+			almacenarLetras.add("伊列哈 : " + T15EstadisticasLetrasChinas.y + " y ");
 		}
-		if (LetrasLatinas.z > 0) {
-			almacenarLetrasChinas.add("舍塔 : " + LetrasLatinas.z);
+		if (T15EstadisticasLetrasChinas.z > 0) {
+			almacenarLetras.add("舍塔 : " + T15EstadisticasLetrasChinas.z + " z ");
 		}
 	}
 
 	/**
 	 * Cambia el idioma por defecto del sistema
 	 */
-	public static void setFormatLatino() {
+	public static void setFormatChino() {
 		setLetrasVocalesConsonantesChinas();
 // Ruta donde se encuentra los archivos para traducir las palabras
 		String ruta = "t15/pag383/ejercicio5/estadisticas/chinas/resource/ejercicio15_06";
@@ -257,7 +245,7 @@ class LetrasChinas {
 // print ISO3 country name for locale
 		Locale localizacion = Locale.getDefault();
 // Localización del idioma
-		System.out.println("Pais : " + localizacion);
+		System.out.println("\nPais : " + localizacion);
 //Ruta donde esta el archivo con las traducciones y los acronimos que los identifica
 		ResourceBundle bundle = ResourceBundle.getBundle(ruta,
 				new Locale(localizacion.toString().concat("_".concat(localizacion.toString().toUpperCase()))));
@@ -268,9 +256,9 @@ class LetrasChinas {
 		StringBuilder sb = new StringBuilder();
 // Añade todas las palabras 
 		String acumulador = "";
-		for (int i = 0; i < almacenarLetrasChinas.size(); i++) {
-			SilabasLatinas.getSilabas();
-			acumulador = (MessageFormat.format(mensaje, almacenarLetrasChinas.get(i)));
+		for (int i = 0; i < almacenarLetras.size(); i++) {
+			T15EstadisticasChinasVocalesConsonantes.getSilabasChinasCompletas();
+			acumulador = (MessageFormat.format(mensaje, almacenarLetras.get(i)));
 			sb.append(acumulador);
 		}
 		System.out.println(sb.toString());
@@ -288,8 +276,16 @@ class LetrasChinas {
 	 * 
 	 */
 	public static void showLetrasChinas() {
-		setVocalConsonantesChinas(SilabasLatinas.getSilabas());
-		setLetrasVocalesConsonantesChinas();
+		setVocalConsonantesChinas(T15EstadisticasChinasVocalesConsonantes.getSilabasChinasCompletas());
+		T15EstadisticasLetrasChinas.setFormatChino();
+	}
+
+	/**
+	 * 
+	 * @return
+	 */
+	public static String[] getPalabrasChinas() {
+		return T15EstadisticasChinasVocalesConsonantes.getSilabasChinasCompletas();
 	}
 
 }
