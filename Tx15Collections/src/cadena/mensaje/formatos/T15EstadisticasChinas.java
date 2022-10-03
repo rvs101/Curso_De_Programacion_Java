@@ -1,80 +1,100 @@
-package t15.pag383.ejercicio4.estadistica;
+package cadena.mensaje.formatos;
+
+import java.text.MessageFormat;
+import java.util.Locale;
+import java.util.ResourceBundle;
 
 /**
- * Escribe un programa que qenere mil silabas de dos letras ( legibles o no )
+ * Internacionaliza el programa del ejercicio 15.4 de forma que funcione por
+ * defecto en ingles
  * 
- * Luego contabilice cuantas empiezan por cada letra
- *
+ * Pero que tengas versiones distintas para China y Taiwan
+ * 
  * @author RVS
  *
- * @date 11 ago 2022 - 11:48:52
- *
+ * @date 31 ago 2022 - 20:27:01
  */
-public class T15Estadistica {
+public class T15EstadisticasChinas {
+	
+	private static final String ruta =  "cadena/mensaje/formatos/mensaje";
 
 	public static void main(String[] args) {
-		Silabas.getSilabasCompletas();
-		Silabas.showSilabas();
-		Letras.showLetras();
+//		Silabas.getSilabasCompletas();
+//		Silabas.showSilabas();
+//		Letras.showLetras();
+//		Mensajes.setFormat();
+		
+		
+		String cadena1 = "en";
+		String cadena2 = "EN";
+
+//		Establece el idioma
+		Locale.setDefault(new Locale(cadena1.toLowerCase(), cadena2.toUpperCase()));
+		
+		System.out.println("• Localización Actual : " + Locale.getDefault());
+		
+		Locale.setDefault(new Locale.Builder().setLanguage(cadena1.toLowerCase()).setRegion(cadena1.toUpperCase()).build());
+
+//		Ruta donde esta el archivo con las traducciones y los acronimos que los identifica
+		ResourceBundle bundle = ResourceBundle.getBundle(ruta,new Locale(cadena1.toLowerCase(), cadena1.toUpperCase()));
+		
+//		Obtengo los objetos los mensajes
+		String m1 = bundle.getString("m1");
+		String m2 = bundle.getString("m2");
+		String m3 = bundle.getString("m3");
+		String m4 = bundle.getString("m4");
+		String m5 = bundle.getString("m5");
+		String m6 = bundle.getString("m6");
+		String m7 = bundle.getString("m7");
+		
+//		Muestro los mensajes formateados
+		System.out.println(MessageFormat.format(m1, m2, m3, m4, m5, m6, m7));
+
 	}
 
 }
 
 /**
- * SubClase Concreta - Vocales
  * 
- * Almacena las vocales
  *
- * @date 11 ago 2022 - 12:38:56
+ * @author RVS
+ *
+ * @date 1 sept 2022 - 18:51:51
  *
  */
 class Vocales {
 
-	/**
-	 * Atributo de clase - Array con todas las vocales
-	 * 
-	 */
 	public final static char[] VOCAL = { 'a', 'e', 'i', 'o', 'u' };
 
 }
 
 /**
- * SubClase Concreta - Consonantes
  * 
- * Almacena las consonantes
- * 
- * @date 11 ago 2022 - 12:45:16
+ *
+ * @author RVS
+ *
+ * @date 1 sept 2022 - 18:51:48
  *
  */
 class Consonantes {
 
-	/**
-	 * Atributo de clase - Array con todas las consonantes
-	 * 
-	 */
 	public final static char[] CONSONANTE = { 'b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'ñ', 'p', 'q', 'r',
 			's', 't', 'v', 'w', 'x', 'y', 'z' };
-
 }
 
 /**
- * SubClase Concreta
+ * 
  *
  * @author RVS
  *
- * @date 11 ago 2022 - 12:45:21
+ * @date 1 sept 2022 - 18:51:44
  *
  */
 class Silabas {
 
-	/**
-	 * Función de clase
-	 * 
-	 */
-	public static String[] silabas = new String[1000];
+	public static String[] silabas = new String[10];
 
 	/**
-	 * Función de clase
 	 * 
 	 * @return
 	 */
@@ -83,10 +103,8 @@ class Silabas {
 	}
 
 	/**
-	 * Función de clase
 	 * 
-	 * Genera las 1000 silabas de 2 letras de forma aleatoria
-	 * 
+	 * @return
 	 */
 	public static String[] getSilabasCompletas() {
 
@@ -121,16 +139,13 @@ class Silabas {
 			x++;
 		}
 	}
-
 }
 
-
 /**
- * SubClase Concreta 
- * 
- * Almacena todas las vocales y consontantes de las silabas creadas
  *
- * @date 31 ago 2022 - 14:48:26
+ * @author RVS
+ *
+ * @date 1 sept 2022 - 18:56:21
  *
  */
 class Letras {
@@ -269,7 +284,7 @@ class Letras {
 	 * 
 	 */
 	public static void showTotalLetras() {
-		System.out.println("------------");
+		System.out.println("\n------------");
 		System.out.println("VOCALES & CONSONANTES");
 		System.out.println("-----------");
 		System.out.println("Letra a: " + a);
@@ -319,15 +334,6 @@ class Letras {
 
 }
 
-
-/**
- * SubClase Concreta
- * 
- * Generar numeros aleatorios
- *
- * @date 31 ago 2022 - 12:10:59
- *
- */
 class GenerarNumeros {
 
 	/**
@@ -362,4 +368,19 @@ class GenerarNumeros {
 	public static int getNumeroNumero() {
 		return (int) (Math.random() * (1 + 100));
 	}
+}
+
+/**
+ * 
+ *
+ * @author RVS
+ *
+ * @date 1 sept 2022 - 18:52:22
+ *
+ */
+class Mensajes {
+
+	
+
+ 
 }
