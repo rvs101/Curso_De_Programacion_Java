@@ -1,4 +1,4 @@
-package cadena.mensaje.formatos;
+package t15.pag383.pruebas2.letras.chinas;
 
 import java.text.MessageFormat;
 import java.util.Locale;

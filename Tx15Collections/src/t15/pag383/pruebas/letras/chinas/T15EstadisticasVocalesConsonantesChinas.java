@@ -1,4 +1,4 @@
-package letras.chinas;
+package t15.pag383.pruebas.letras.chinas;
 
 /**
  * Internacionaliza el programa del ejercicio 15.4 de forma que funcione por
