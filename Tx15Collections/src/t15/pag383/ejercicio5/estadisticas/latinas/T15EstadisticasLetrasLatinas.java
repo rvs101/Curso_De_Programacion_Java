@@ -5,8 +5,6 @@ import java.util.ArrayList;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
-import t15.pag383.ejercicio5.estadisticas.principal.T15EstadisticasMensajes;
-
 /**
  * Internacionaliza el programa del ejercicio 15.4 de forma que funcione por
  * defecto en ingles

@@ -1,4 +1,4 @@
-package t15a.pag383.ejercicio5.estadisticas.chinas.solucion;
+package t15.pag383.ejercicio5.estadisticas.chinas.solucion;
 
 import java.text.MessageFormat;
 import java.util.ArrayList;
@@ -16,7 +16,6 @@ import java.util.ResourceBundle;
  * De forma que funcione por defecto en ingles pero que tengas versiones
  * distintas para China y Taiwan
  * 
- *
  * @author RVS
  *
  * @date 31 ago 2022 - 20:27:01 d
@@ -29,9 +28,9 @@ public class T15EstadisticasChinasSol {
 	private static final int TAM = 10;
 
 	public static void main(String[] args) {
-//		Locale.setDefault(Locale.CHINA);
-//		Locale.setDefault(Locale.TAIWAN);
 		Locale.setDefault(Locale.UK);
+//		Locale.setDefault(Locale.TAIWAN);
+//		Locale.setDefault(Locale.CHINA);
 
 		List<String> lista = generaLista();
 		Map<Character, Integer> mapa = cuentaLetras(lista);
