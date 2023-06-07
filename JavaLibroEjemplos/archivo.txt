@@ -1,0 +1,2 @@
+Este es un ejemplo de escritura de un archivo
+Utilizando "BufferedWriter" y el método "flush()" 

@@ -1,0 +1,38 @@
+Este es un ejemplo de escritura de un archivo
+Utilizando "BufferedWriter" y el método "flush()" 
+
+- flush()
+
+En Java SE se utiliza en flujos para vaciar cualquier salida almacenada en búfer 
+y forzar que se escriba inmediatamente en su destino. 
+
+El almacenamiento en búfer se realiza 
+principalmente para mejorar el rendimiento de E/S.
+
+Por ejemplo
+
+Si estás escribiendo datos en un flujo de salida, 
+puedes llamar al método `flush()` para asegurarte 
+de que todos los datos del búfer se escriban antes 
+de cerrar el flujo.
+
+También puedes usar `flush()` si necesitas asegurarte 
+de que todos tus datos se guarden en cualquier momento antes de cerrar el flujo
+
+Un ejemplo del uso del método `flush()` en Java SE podría ser el siguiente:
+
+FileOutputStream fout = new FileOutputStream("test.txt");
+BufferedOutputStream bout = new BufferedOutputStream(fout);
+String s = "Hola mundo";
+byte b[] = s.getBytes();
+bout.write(b);
+bout.flush();
+bout.close();
+fout.close();
+
+En este ejemplo, estamos escribiendo una cadena en un archivo 
+utilizando un `BufferedOutputStream`. 
+
+Después de escribir los datos, llamamos al método `flush()` 
+para asegurarnos de que todos los datos del búfer 
+se escriban en el archivo antes de cerrar los flujos
