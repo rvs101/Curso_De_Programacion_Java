@@ -1,0 +1,4 @@
+INDEX VERSION 1.132+C:\Java_Repo\Java_Repaso_Basico\JavaLibroEjemplos\.metadata\.plugins\org.eclipse.jdt.core
+1443943148.index
+1865797976.index
+2298930795.index
