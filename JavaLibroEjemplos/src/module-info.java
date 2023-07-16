@@ -6,4 +6,5 @@
  *
  */
 module JavaLibroEjemplos {
+	requires java.logging;
 }
