@@ -1,6 +1,7 @@
 package rvs.libro.pag24.ejercicios2_4.switchbasico.frases.basico;
 
 /**
+ * Clase Concreta : Lista de Frases
  * 
  * 16 jul 2023 - 1:25:12
  *

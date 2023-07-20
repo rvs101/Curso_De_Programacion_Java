@@ -3,16 +3,8 @@ package rvs.libro.pag24.ejercicios2_4.switchbasico.frases.basico;
 import java.io.IOException;
 
 /**
- * Las frases inventarlas <br>
- * <br>
- * Hacer un programa que utilice la estructura switch() para mostrar una frase
- * de acuerdo a un número<br>
- * <br>
- * Pedir por teclado un número del 1 al 10, exigir que no se pase de esos
- * valores, capturar errores y repetir hasta que se introduzca el 0 que será que
- * sale del programa. <br>
- * <br>
- * 
+ * Clase Concreta : Frases Inventadas
+ *
  * 15 jul 2023 - 22:14:43
  *
  * @author RVS
@@ -21,31 +13,42 @@ import java.io.IOException;
 public class FrasesInventadas {
 
 	/**
-	 * 
+	 * Atributo de instancia <br>
+	 * <br>
+	 * Clase para invocar metodos
 	 */
 	private FrasesCapturaTeclado fct = new FrasesCapturaTeclado();
 
 	/**
+	 * Atributo de instancia <br>
+	 * <br>
+	 * Clase para invocar metodos
 	 * 
 	 */
 	private ListaFrases lf = new ListaFrases();
 
 	/**
-	 * 
+	 * Atributo de instancia <br>
+	 * <br>
+	 * Almacena el valor para elegir una frase
 	 */
 	private int valor = 0;
 
 	/**
+	 * Metodo de Instancia <br>
+	 * <br>
 	 * 
-	 * @return
+	 * @return - int - devuelve un valor entero
 	 */
 	public int getValor() {
 		return valor;
 	}
 
 	/**
+	 * Procedimiento de Instancia <br>
+	 * <br>
 	 * 
-	 * @param valor
+	 * @param valor - int - establece el valor entero
 	 */
 	public void setValor(int valor) {
 		this.valor = valor;
@@ -54,11 +57,11 @@ public class FrasesInventadas {
 	/**
 	 * Procedimiento de Instancia<br>
 	 * <br>
+	 * Muestra un mensaje despues de elegir un numero entre 1 y 10
 	 * 
 	 * @param numero - int - valor para elegir el mensaje
 	 */
 	public void showPhrase() {
-
 //		Interruptor
 		boolean off = true;
 
@@ -69,6 +72,7 @@ public class FrasesInventadas {
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
+				System.exit(-1);
 			}
 			if (getValor() > 0) {
 				lf.listPhrase(getValor());
@@ -77,10 +81,5 @@ public class FrasesInventadas {
 				off = false;
 			}
 		} while (off);
-	}
-
-	public static void main(String[] args) {
-		FrasesInventadas fi = new FrasesInventadas();
-		fi.showPhrase();
 	}
 }
