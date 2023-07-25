@@ -71,6 +71,7 @@ public class Teclado {
 		double numeroDecimal = 0;
 
 		boolean aceptar = false;
+		
 		do {
 			try {
 				System.out.println("Introduce una nota de clase entre 1 y 10");

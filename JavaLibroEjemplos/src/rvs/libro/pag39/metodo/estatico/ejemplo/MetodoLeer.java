@@ -66,4 +66,4 @@ public class MetodoLeer {
 		}
 		return lee;
 	}
-}
+} //final de la funcion leer
