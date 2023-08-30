@@ -39,6 +39,9 @@ public class Cap3_sock_tel {
 		System.err.println("Escuchando el puerto: " + PORT);
 
 		try {
+// Un 'sockets' de servidor espera solicitudes que llegue a través de la red 	
+// Realiza una operación basada en esa solicitud y 
+// luego devuelve un resultado al solicitante			
 			ss = new ServerSocket(PORT);
 		} catch (IOException ex) {
 			System.out.println("El sistema no permite abrir el puerto");
@@ -47,6 +50,7 @@ public class Cap3_sock_tel {
 		}
 
 		try {
+// Objeto 'Socket' implementa sockets de cliente		
 			skt = ss.accept();
 		} catch (IOException ex1) {
 			System.out.println("Error - skt : " + ex1.getMessage());
@@ -90,7 +94,7 @@ public class Cap3_sock_tel {
 						timer_on = false;
 					}
 				} else {
-//				Si el "timer_on" esta apagado "false" , mostramos un "telefono" si es que hay 
+// Si el "timer_on" esta apagado "false" , mostramos un "telefono" si es que hay 
 // Nos preparamos para encender el timer y mostrar telefonos que 
 // sucedera si hay más de 1 elemento en el buffer 						
 					if (buff_elem > 0) { // Almacena la cantidad de elementos en nuestra memoria temporal
